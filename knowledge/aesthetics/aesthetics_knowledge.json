@@ -1,0 +1,4677 @@
+{
+  "version": "1.0.0",
+  "description": "穿搭美学结构化知识库 — 供匹配引擎消费。数据来源：theory.md + 原项目风格指纹 + 场景画像 + 面料数据。",
+  "last_updated": "2026-06-29-clean",
+  "dimensions": {
+    "proportion": {
+      "id": "proportion",
+      "name_cn": "比例",
+      "description": "比例决定腿身比视觉起点。人眼对比例极其敏感——两个身高相同的人，穿出不同比例，观感差10cm。",
+      "principles": [
+        {
+          "id": "prop_visual_waist",
+          "name_cn": "视觉腰线",
+          "statement": "腰线位置决定腿身比视觉起点",
+          "mechanism": "人眼将上下装交界处作为上下半身分界点。腰线每上移1cm，腿长视觉增加约2%。塞衣是最直接的腰线上移手段。"
+        },
+        {
+          "id": "prop_vertical_extension",
+          "name_cn": "纵向延伸",
+          "statement": "同色系连续不截断，视线纵向流动，显高显瘦",
+          "mechanism": "高对比度的上下装会在腰线截断视线→三段式→显矮。同色延伸（鞋裤同色、上下同色系）让视线从肩到脚不中断。"
+        },
+        {
+          "id": "prop_split_rule",
+          "name_cn": "分割法则",
+          "statement": "上1/3+下2/3 比 1/2+1/2 更显高",
+          "mechanism": "横向分割点决定身体被「读」成几段。黄金分割点上身占1/3是视觉最优解——这就是「上短下长」的理论基础。"
+        },
+        {
+          "id": "prop_exposure_ankle",
+          "name_cn": "露踝法则",
+          "statement": "脚踝是腿部最细处，露出即显瘦",
+          "mechanism": "露踝 = 腿到此最细处结束 → 利落显瘦。盖踝 = 腿延伸至鞋面 → 堆积邋遢。九分裤/卷边是最高效的腿长优化。"
+        },
+        {
+          "id": "prop_exposure_wrist",
+          "name_cn": "露腕法则",
+          "statement": "手腕是手臂最细处，露出即显精神",
+          "mechanism": "露腕截断手臂线条在最细处→利落。盖腕（尤其长袖堆在手腕）→拖沓。"
+        }
+      ]
+    },
+    "color": {
+      "id": "color",
+      "name_cn": "色彩",
+      "description": "色彩是穿搭中最容易被注意却也最容易被做错的维度。核心工具：12色色环+明度/饱和度/色相三维。",
+      "principles": [
+        {
+          "id": "color_60_30_10",
+          "name_cn": "60:30:10 配色法则",
+          "statement": "主色60% + 辅色30% + 点缀色10% = 视觉和谐",
+          "mechanism": "主色建立基调，辅色提供对比，点缀色给予视觉焦点。三者比例失衡 = 花哨（点缀太多）或单调（没有点缀）。"
+        },
+        {
+          "id": "color_echo",
+          "name_cn": "色彩呼应",
+          "statement": "两处以上同色元素制造视觉流动线",
+          "mechanism": "人眼天生寻找颜色关联，同色元素在大脑中自动连线。呼应距离越远视觉流动性越强。呼应不是复制——同色系也算呼应。呼应超过3处 = 制服感。"
+        },
+        {
+          "id": "color_bridging",
+          "name_cn": "色彩桥接",
+          "statement": "中间色单品连接上下身对比色，降低冲突感",
+          "mechanism": "当上下装色环距离>4步或明度差>3阶时，用中性色（白/黑/灰/卡其）或中间色单品过渡。桥接单品=腰带、内搭领口、袜子等小面积单品。"
+        },
+        {
+          "id": "color_skin_tone",
+          "name_cn": "肤色匹配",
+          "statement": "颜色越靠近脸部，肤色匹配越重要",
+          "mechanism": "暖皮（黄调）→暖色系更和谐（大地色/橙/黄/奶油白/橄榄绿）。冷皮（粉调）→冷色系更和谐（蓝/紫/粉/纯白/灰）。不是「不能穿什么」，是「什么更提气色」。"
+        },
+        {
+          "id": "color_value_weight",
+          "name_cn": "颜色重量感",
+          "statement": "上浅下深=稳定显高（符合重力直觉），上深下浅=个性街头",
+          "mechanism": "浅色视觉「轻」→适合上半身。深色视觉「重」→适合下半身。日常穿搭首选上浅下深（不出错），街头风格可以故意反着来。"
+        },
+        {
+          "id": "color_max_three_hues",
+          "name_cn": "三色上限",
+          "statement": "全身上下不超过3个色相",
+          "mechanism": "人脑同时处理超过3个色相时感知为「乱」。黑白灰不算色相（中性色），可以自由叠加。"
+        }
+      ]
+    },
+    "silhouette": {
+      "id": "silhouette",
+      "name_cn": "廓形",
+      "description": "廓形是穿搭的「第一眼印象」——远看先看到廓形，近看才注意到颜色和细节。",
+      "principles": [
+        {
+          "id": "sil_five_types",
+          "name_cn": "五大基本廓形",
+          "statement": "H/A/Y/X/O 五种廓形，各有其适合的身形和传递的信号",
+          "mechanism": "H型（上下同宽）=利落现代。A型（上窄下宽）=柔和优雅。Y/T型（上宽下窄）=力量权威。X型（中间收腰）=经典曲线。O型（中间外扩）=慵懒前卫。穿搭的目标不是改变体型，是在现有体型上「造」出想要的廓形。"
+        },
+        {
+          "id": "sil_tight_loose_balance",
+          "name_cn": "松紧平衡",
+          "statement": "全身上下至少一处「收」+ 至少一处「松」",
+          "mechanism": "三条黄金规则：上宽下窄（梨形友好）、上窄下宽（倒三角友好）、全宽收腰（矩形友好）。全宽不收腰=City Boy有意为之（需身高气场）。全窄=对身材要求极高，不推荐日常。"
+        },
+        {
+          "id": "sil_v_neck_extension",
+          "name_cn": "V领纵向延伸",
+          "statement": "V领开口制造纵向视觉线，拉长脖子+修饰脸型",
+          "mechanism": "圆领截断=脖子到此结束。V领延伸=脖子向下延伸。解扣制造V领是最简单的脸型修饰手段。"
+        }
+      ]
+    },
+    "fabric": {
+      "id": "fabric",
+      "name_cn": "材质",
+      "description": "材质是「质感」和「高级感」的主要来源。最容易被忽略但最能体现穿搭功力。",
+      "principles": [
+        {
+          "id": "fab_spectrum",
+          "name_cn": "材质三维光谱",
+          "statement": "每种材质在硬↔软、光↔糙、厚↔薄三个轴上定位",
+          "mechanism": "硬（丹宁/帆布/皮革）=结构清晰。软（丝绸/羊绒/莫代尔）=柔顺流动。光（丝绸/漆皮/缎面）=华丽正式。糙（亚麻/毛呢/做旧皮）=自然休闲。厚（重磅棉/羊毛呢）=秋冬稳重。薄（丝绸/亚麻/薄棉）=春夏轻盈。"
+        },
+        {
+          "id": "fab_texture_clash",
+          "name_cn": "材质对冲",
+          "statement": "用不同材质的对比制造层次感，1个对冲刚好，0个平淡，>2个混乱",
+          "mechanism": "三类对冲：硬+软（皮夹克+针织内搭）=经典。光+糙（缎面衬衫+粗花呢）=高级。厚+薄（厚毛衣+薄纱）=季节过渡。换季时（3月/9月）最适合材质对冲——厚+薄搭配最自然。"
+        },
+        {
+          "id": "fab_season",
+          "name_cn": "材质与季节",
+          "statement": "面料选择是季节适应的第一道防线",
+          "mechanism": "夏季=亚麻/轻薄棉/丝绸（透气散热）。春秋=中等磅数棉/轻薄羊毛/丹宁。冬季=重磅羊毛/羊绒/羽绒/厚棉。亚麻在冬天=失温，羊毛在夏天=中暑。"
+        }
+      ]
+    },
+    "style": {
+      "id": "style",
+      "name_cn": "风格",
+      "description": "风格是穿搭的「语言」——告诉别人你是谁，或者今天想成为谁。",
+      "principles": [
+        {
+          "id": "sty_80_20_mixing",
+          "name_cn": "80/20 风格混搭法则",
+          "statement": "一套穿搭中混入20%「异风格」元素，制造张力和个性",
+          "mechanism": "80%保持主风格完整性，20%用另一种风格打破。韩系轻熟(80%)+美式工装靴(20%)=温柔中有力量。四种风格各25%=没有主心骨，杂乱。"
+        },
+        {
+          "id": "sty_technique_variation",
+          "name_cn": "同技不同风",
+          "statement": "同一个穿搭技巧在不同风格方向中有不同的执行方式",
+          "mechanism": "法式半塞：Clean Fit=精确正中对准3-5cm，City Boy=随意塞入不追求对称5-7cm，韩系=不对称只塞一侧。不是「推荐什么技巧」，是「这个技巧在你的风格里怎么做」。"
+        }
+      ]
+    },
+    "body_modification": {
+      "id": "body_modification",
+      "name_cn": "身形修饰",
+      "description": "穿搭的核心能力之一：知道自己的身体特征，然后通过穿着优化视觉印象。",
+      "principles": [
+        {
+          "id": "body_accentuate",
+          "name_cn": "扬长避短",
+          "statement": "不是掩盖缺点，是引导视线去你最想被看到的地方",
+          "mechanism": "上半身有优势→亮色/层次在上。腿长有优势→焦点在下（亮色鞋/卷边露踝）。每个人都有至少一个优势特征，找到它并让穿搭为它服务。"
+        },
+        {
+          "id": "body_visual_weight_shift",
+          "name_cn": "视觉重心转移",
+          "statement": "通过颜色、层次、露肤引导视线远离劣势区域",
+          "mechanism": "梨形→强化上半身（亮色上装+层次）→视线向上。苹果→V领延伸+纵向线条→视线纵向。倒三角→下身亮色+宽松裤→视线向下。"
+        },
+        {
+          "id": "body_waist_definition",
+          "name_cn": "腰线制造",
+          "statement": "矩形和苹果身形的第一优先级永远是制造腰线",
+          "mechanism": "矩形=塞衣/腰带制造原本不明显的腰线。苹果=半塞/V领/纵向线条替代紧身全塞（全塞可能暴露腰腹问题）。梨形=腰线是最大优势，必须明确。"
+        }
+      ]
+    },
+    "occasion": {
+      "id": "occasion",
+      "name_cn": "场合",
+      "description": "穿搭从来不是在真空中存在的——它服务于具体的时间和地点。",
+      "principles": [
+        {
+          "id": "occ_formality_spectrum",
+          "name_cn": "正式度光谱",
+          "statement": "正式度的三个信号：领口高度、扣子数量、面料挺括度",
+          "mechanism": "领口越低越休闲（T恤圆领→Polo翻领→衬衫立领→西装驳领）。扣子越多越正式（0颗敞开→1颗解→全扣）。面料越挺括越正式（亚麻→棉→羊毛→丝绸）。"
+        },
+        {
+          "id": "occ_same_clothes_different_wear",
+          "name_cn": "同衣不同场合",
+          "statement": "不换衣服只改穿法，正式度±20-30%",
+          "mechanism": "日常→商务：扣上最上扣(+20%)+全塞(+15%)+加腰带(+10%)。商务→日常：解两颗扣+卷袖(-30%)+半塞(-15%)+不系腰带(-10%)。"
+        }
+      ]
+    }
+  },
+  "body_type_strategies": {
+    "梨形": {
+      "description": "肩窄胯宽，上半身量感不足",
+      "challenges": [
+        "胯宽容易显腿短",
+        "上半身视觉量感不足",
+        "低腰设计会加重问题"
+      ],
+      "strategies": [
+        "上移视觉重心（亮色上装、层次叠穿、宽领口）",
+        "明确腰线——这是梨形最大的优势",
+        "选择A线少的下装（直筒/微喇优于紧身）",
+        "上半身增加装饰（层次领口、袖口翻折等）"
+      ],
+      "avoid": [
+        "紧身包胯下装",
+        "低腰设计",
+        "上深下浅",
+        "过分强调胯部的腰带位置"
+      ],
+      "best_skill_ids": [
+        "french_tuck",
+        "cuff_roll",
+        "sleeve_fold",
+        "layering_collar",
+        "color_echo"
+      ]
+    },
+    "矩形": {
+      "description": "肩胯同宽，无明显腰线，直筒轮廓",
+      "challenges": [
+        "缺乏曲线和立体感",
+        "直筒轮廓容易显单调",
+        "全宽松容易像穿布袋"
+      ],
+      "strategies": [
+        "制造腰线（塞衣/腰带）——这是矩形第一优先级",
+        "增加上半身层次（叠穿/领口造型）打破直线",
+        "用颜色对比制造视觉分割",
+        "上宽下窄或上窄下宽——避免上下同宽"
+      ],
+      "avoid": [
+        "全宽松无收腰",
+        "单一颜色从头到脚",
+        "上下完全同宽同色"
+      ],
+      "best_skill_ids": [
+        "french_tuck",
+        "color_echo",
+        "layering_collar",
+        "full_tuck",
+        "belt_color_echo"
+      ]
+    },
+    "倒三角": {
+      "description": "肩宽胯窄，上半身体积感强",
+      "challenges": [
+        "上半身容易显压迫感",
+        "下身显单薄",
+        "整体比例头重脚轻"
+      ],
+      "strategies": [
+        "下身增加量感（宽松裤、宽边卷裤脚、亮色下装）",
+        "柔化肩线（V领、解扣、落肩设计）",
+        "避免上半身装饰（去掉肩章/徽章）",
+        "上深下浅——转移视线到下"
+      ],
+      "avoid": [
+        "肩部装饰过多（肩章/徽章/横条纹）",
+        "紧身上衣",
+        "上浅下深",
+        "窄管裤"
+      ],
+      "best_skill_ids": [
+        "button_rules",
+        "cuff_roll",
+        "full_tuck",
+        "natural_stack",
+        "belt_color_echo"
+      ]
+    },
+    "苹果": {
+      "description": "中段（腰腹）突出，四肢相对纤细",
+      "challenges": [
+        "腰腹是视觉焦点容易显臃肿",
+        "紧身中段暴露问题",
+        "高腰全塞可能适得其反"
+      ],
+      "strategies": [
+        "V领纵向延伸——拉长躯干线条",
+        "松量控制——不过紧（暴露）不过宽（加宽）",
+        "视线引导至四肢/脸部（露腕露踝）",
+        "半塞优于全塞——避免在腹部制造紧绷感",
+        "深色中段+亮色四肢——视线外移"
+      ],
+      "avoid": [
+        "紧身中段",
+        "高腰全塞",
+        "横向条纹在上半身",
+        "宽腰带"
+      ],
+      "best_skill_ids": [
+        "button_rules",
+        "cuff_roll",
+        "sleeve_fold",
+        "color_echo",
+        "casual_front_tuck"
+      ]
+    },
+    "沙漏": {
+      "description": "肩胯同宽，腰明显收窄，天然曲线",
+      "challenges": [
+        "身形已经很好，主要维护而非修正",
+        "过度宽松会浪费曲线优势",
+        "过度紧身可能过于性感"
+      ],
+      "strategies": [
+        "强调腰线——但不要过度（腰带宽度≤3cm）",
+        "自然廓形——让衣服随身体曲线而非对抗它",
+        "质感提升——身形好的人穿差面料更明显",
+        "微调即可——沙漏不需要大改比例"
+      ],
+      "avoid": [
+        "过度宽松掩盖曲线",
+        "过度紧身",
+        "宽腰带（>4cm）截断腰线"
+      ],
+      "best_skill_ids": [
+        "french_tuck",
+        "belt_color_echo",
+        "belt_casual_drape",
+        "color_echo"
+      ]
+    }
+  },
+  "body_modifiers": {
+    "long_torso": {
+      "description": "躯干偏长，腿身比偏小",
+      "strategy": "上移腰线——塞衣、高腰下装、短款上衣",
+      "bonus_skill_ids": [
+        "french_tuck",
+        "full_tuck",
+        "casual_front_tuck"
+      ],
+      "bonus_value": 2
+    },
+    "short_legs": {
+      "description": "腿身比偏小",
+      "strategy": "同色延伸（鞋裤同色）+ 高腰 + 露踝 + 避免低腰",
+      "bonus_skill_ids": [
+        "french_tuck",
+        "full_tuck",
+        "cuff_roll",
+        "color_echo"
+      ],
+      "bonus_value": 2
+    },
+    "thick_waist": {
+      "description": "腰腹突出或腰线不明显",
+      "strategy": "半塞优于全塞、V领优于圆领、避免腰间紧绷",
+      "caution_skill_ids": [
+        "full_tuck"
+      ],
+      "prefer_skill_ids": [
+        "casual_front_tuck",
+        "french_tuck",
+        "button_rules"
+      ],
+      "caution_note": "全塞可能显腰粗，优先推荐半塞"
+    },
+    "broad_shoulders": {
+      "description": "肩宽偏宽",
+      "strategy": "柔化肩线（V领/解扣）、下身增加量感平衡",
+      "bonus_skill_ids": [
+        "button_rules",
+        "cuff_roll",
+        "natural_stack"
+      ],
+      "bonus_value": 2
+    },
+    "narrow_shoulders": {
+      "description": "肩偏窄",
+      "strategy": "增加上半身体积（层次叠穿/立领/宽领口）",
+      "bonus_skill_ids": [
+        "layering_collar",
+        "stand_collar",
+        "sleeve_fold"
+      ],
+      "bonus_value": 2
+    }
+  },
+  "style_directions": {
+    "clean_fit": {
+      "name_cn": "Clean Fit",
+      "name_en": "Clean Fit",
+      "essence": "精确简约，比例至上。Less is more，每一厘米都要精确。",
+      "source": "原项目 styles/male/clean_fit.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "白",
+          "米白",
+          "灰",
+          "黑",
+          "藏青",
+          "卡其",
+          "麻灰",
+          "浅灰"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "同色系或相邻色系，极简配色。70%中性 + 20%大地 + 10%点缀。"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "针织",
+          "灯芯绒",
+          "牛津纺"
+        ],
+        "acceptable": [
+          "牛仔",
+          "羊毛混纺",
+          "帆布"
+        ],
+        "rejected": [
+          "速干",
+          "合成"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "重磅纯色T恤是Clean Fit灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "直筒水洗牛仔裤/卡其裤必备",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "白色板鞋/德训鞋是标配",
+          "bonus": 15
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "精确正中对准，两侧对称垂下",
+          "edge_width": "3-5cm"
+        },
+        "cuff_roll": {
+          "method": "窄边单折卷边，整齐利落",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "单解开扣，刚好不紧绷"
+        },
+        "sleeve_fold": {
+          "method": "袖口单折整齐翻折",
+          "width": "2-3cm"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 5,
+        "遮盖小肚子": 5
+      },
+      "related_styles": [
+        "japanese_city_boy",
+        "korean_minimal",
+        "smart_casual"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "resort_vacation"
+      ],
+      "tier": "core"
+    },
+    "city_boy": {
+      "name_cn": "City Boy",
+      "name_en": "Japanese City Boy",
+      "essence": "宽松廓形，都市休闲。故意的宽松，有控制的随意——「穿大不穿小」。",
+      "source": "原项目 styles/male/japanese_city_boy.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "廓形"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "藏青",
+          "橄榄绿",
+          "卡其",
+          "灰",
+          "白",
+          "姜黄",
+          "米白",
+          "深绿",
+          "麻灰",
+          "军绿"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 4,
+        "color_logic": "低饱和冷色主调 + 1个暖色点缀（如姜黄鞋/帽）"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "牛津纺",
+          "灯芯绒",
+          "牛仔",
+          "帆布"
+        ],
+        "acceptable": [
+          "针织",
+          "羊毛混纺"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "皮质"
+        ]
+      },
+      "layering": {
+        "level": "高",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "格纹/条纹衬衫做外搭是City Boy灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "TS",
+          "desc": "宽松短袖是底层内搭",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋/德训鞋是City Boy标志",
+          "bonus": 15
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称",
+          "edge_width": "5-7cm"
+        },
+        "cuff_roll": {
+          "method": "宽边双折裤脚，配中筒白袜",
+          "width": "4-5cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠在鞋面——City Boy标志"
+        },
+        "sleeve_fold": {
+          "method": "随意推肘堆叠而非规整翻折"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则核心"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加肩宽": 5,
+        "增加上半身体量感": 8,
+        "遮盖小肚子": 5
+      },
+      "related_styles": [
+        "clean_fit",
+        "smart_casual",
+        "korean_minimal"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "resort_vacation"
+      ],
+      "tier": "core"
+    },
+    "korean_light_mature": {
+      "name_cn": "韩系轻熟",
+      "name_en": "Korean Light Mature",
+      "essence": "精致修身，温柔色系。韩剧男主公式——长款大衣+高领针织+九分裤。温柔而有力量。",
+      "source": "原项目 styles/male/korean_light_mature.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "修身"
+        ],
+        "rejected": [
+          "紧身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "驼色",
+          "卡其",
+          "炭灰",
+          "黑",
+          "米白",
+          "奶白",
+          "咖啡色",
+          "藏青",
+          "深灰"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "温柔低饱和单色或相邻色系，不超过3色。奶白色调是韩系标志。"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛混纺",
+          "针织",
+          "棉",
+          "皮质"
+        ],
+        "acceptable": [
+          "灯芯绒",
+          "亚麻"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "牛仔",
+          "帆布"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "KNIT",
+          "desc": "高领针织定调韩系核心",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "九分西裤合身/修身，黑/灰/米白",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "切尔西靴/乐福鞋，皮质黑/棕/白",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "长款大衣（羊毛混纺，合身）",
+          "bonus": 15
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "不对称只塞一侧前摆",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整无褶皱——韩系标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边配白袜，露出脚踝",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "单解开扣，领口微敞——刚好不过分"
+        },
+        "belt_color_echo": {
+          "method": "腰带与鞋同色——精致细节"
+        }
+      },
+      "body_modifier_bonus": {
+        "上半身体量感": 7,
+        "遮盖小肚子": 8
+      },
+      "related_styles": [
+        "smart_casual",
+        "clean_fit",
+        "korean_minimal",
+        "american_ivy_league"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "retro_90s_hiphop",
+        "scene_blokecore"
+      ],
+      "tier": "core"
+    },
+    "japanese_minimal": {
+      "name_cn": "日系简约",
+      "name_en": "Japanese Minimal / Wabi-Sabi",
+      "essence": "自然质朴，细节考究。不是空洞极简——拥抱不完美，衣服与身体之间要有「间」(Ma)的空气感。",
+      "source": "原项目 styles/male/korean_minimal.json + styles_universal/japanese_wabi_sabi/encyclopedia.md",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "合身"
+        ],
+        "acceptable": [],
+        "rejected": [
+          "紧身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "浅蓝",
+          "薄荷绿",
+          "米白",
+          "浅灰",
+          "卡其",
+          "白",
+          "淡粉",
+          "灰",
+          "象牙白",
+          "斑鸠灰",
+          "炭黑",
+          "艾草绿",
+          "铁锈褐",
+          "墨黑蓝"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "低饱和冷色/中性为主。日系侘寂=自然褪色感：象牙白(非荧光白)+斑鸠灰+炭黑+艾草绿。"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "针织",
+          "牛津纺",
+          "亚麻",
+          "灯芯绒",
+          "羊毛混纺"
+        ],
+        "acceptable": [
+          "丹宁（赤耳原色）",
+          "帆布"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "皮质",
+          "光泽面料"
+        ],
+        "philosophy": "亚麻的天然皱褶是加分项、羊毛的起球褪色是时间印记、丹宁需穿三年才有性格。触觉第一，视觉第二。"
+      },
+      "layering": {
+        "level": "低中",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "浅色纯色衬衫单穿是日系灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "合身束脚/修身达到上宽下窄",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋/Clarks Wallabees/Paraboot",
+          "bonus": 15
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "只塞正前方一小块，其余自然堆叠",
+          "edge_width": "2-4cm"
+        },
+        "cuff_roll": {
+          "method": "自然堆叠不卷——日系侘寂标志"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——日系侘寂核心"
+        },
+        "stand_collar": {
+          "method": "外套领立起——防风+造型"
+        },
+        "sleeve_fold": {
+          "method": "随意推肘而非规整翻折——不完美感"
+        }
+      },
+      "body_modifier_bonus": {
+        "颜色显白": 10,
+        "上半身体量感": 5,
+        "遮盖小肚子": 5
+      },
+      "related_styles": [
+        "clean_fit",
+        "smart_casual",
+        "japanese_city_boy"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "resort_vacation"
+      ],
+      "tier": "core"
+    },
+    "american_retro": {
+      "name_cn": "美式复古",
+      "name_en": "American Workwear / Heritage",
+      "essence": "硬朗实用，经典耐穿。衣服是用来穿的，要能干活——19世纪蓝领工装的现代演绎。",
+      "source": "原项目 styles/male/american_workwear.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "合身"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "棕",
+          "卡其",
+          "靛蓝",
+          "橄榄绿",
+          "黑",
+          "灰",
+          "白",
+          "米白"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "大地色+靛蓝为主，低饱和。铁锈红/奶油白为点缀。"
+      },
+      "fabric": {
+        "preferred": [
+          "牛仔",
+          "帆布",
+          "棉",
+          "灯芯绒"
+        ],
+        "acceptable": [
+          "皮质",
+          "羊毛混纺",
+          "牛津纺"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "丝质"
+        ]
+      },
+      "layering": {
+        "level": "中低",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "Chore Coat/Denim Jacket工装外套是灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "原色丹宁/帆布工装裤",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "Red Wing/Timberland工装靴",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "重磅纯色T恤白/黑/灰",
+          "bonus": 12
+        }
+      ],
+      "signature_techniques": {
+        "cuff_roll": {
+          "method": "宽边单折卷裤脚——日式Amekaji核心也适用",
+          "width": "4-5cm"
+        },
+        "roll_to_elbow": {
+          "method": "规整地卷至肘下——工装风格标志"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕——配工装外套"
+        },
+        "button_rules": {
+          "method": "工装外套敞开穿——不扣"
+        }
+      },
+      "body_modifier_bonus": {
+        "上半身体量感": 8,
+        "遮盖小肚子": 5
+      },
+      "related_styles": [
+        "japanese_amekaji",
+        "british_heritage",
+        "streetwear",
+        "retro_90s_hiphop"
+      ],
+      "conflicting_styles": [
+        "chinese_heritage",
+        "korean_light_mature",
+        "scandi_minimalism"
+      ],
+      "tier": "core"
+    },
+    "italian_classic": {
+      "name_cn": "意式经典",
+      "name_en": "Italian Sprezzatura",
+      "essence": "优雅随性，精心计算的漫不经心。Sprezzatura——把西装穿出「我根本没花心思」的效果。",
+      "source": "原项目 styles_universal/italian_sprezzatura/encyclopedia.md + categories.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "修身"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "廓形",
+          "oversized"
+        ]
+      },
+      "color_rules": {
+        "allowed_hues": [
+          "海军蓝",
+          "驼色",
+          "酒红",
+          "奶油",
+          "橄榄",
+          "炭灰",
+          "米白",
+          "棕"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 4,
+        "color_logic": "主调海军蓝/灰/棕/米白 + 点缀酒红/森林绿/芥末黄。颜色可以更多但每个都要有「被考虑过」的理由。"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛",
+          "丝绸",
+          "羊绒",
+          "软棉",
+          "亚麻"
+        ],
+        "acceptable": [
+          "皮质",
+          "麂皮",
+          "灯芯绒"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "大面积尼龙"
+        ],
+        "philosophy": "那不勒斯软肩(Spalla Camicia)无垫肩自然垂坠。面料要有「手」——摸起来舒服，看起来更舒服。"
+      },
+      "layering": {
+        "level": "中高",
+        "min_layers": 2,
+        "max_layers": 4
+      },
+      "formality_range": {
+        "min": 3,
+        "max": 5
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "无结构西装（那不勒斯肩）是Sprezzatura灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "高腰打褶西裤微锥形",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "乐福鞋（无袜/麂皮）",
+          "bonus": 15
+        },
+        {
+          "category": "SHIRT",
+          "desc": "柔软白衬衫微敞领口",
+          "bonus": 15
+        }
+      ],
+      "signature_techniques": {
+        "button_rules": {
+          "method": "衬衫单解开扣+袖口那颗不扣——Sprezzatura标志"
+        },
+        "sleeve_fold": {
+          "method": "袖口单折仅解开袖口那颗扣子翻折——不经意感"
+        },
+        "belt_casual_drape": {
+          "method": "腰带不穿过所有扣环随意垂下——Sprezzatura终极签名"
+        },
+        "french_tuck": {
+          "method": "前摆全塞后轻微拉出——「我塞了但我不在乎」"
+        },
+        "no_belt_styling": {
+          "method": "高腰裤自带腰线不系腰带——极简优雅"
+        },
+        "color_echo": {
+          "method": "口袋方巾与袜子/领带颜色呼应——精心计算的细节"
+        }
+      },
+      "body_modifier_bonus": {
+        "瘦长体型": 10,
+        "中等体型": 7,
+        "偏胖体型": 5
+      },
+      "related_styles": [
+        "pitti_uomo",
+        "smart_casual",
+        "korean_light_mature"
+      ],
+      "conflicting_styles": [
+        "streetwear",
+        "athleisure_sport",
+        "retro_90s_hiphop"
+      ],
+      "tier": "core"
+    },
+    "american_ivy_league": {
+      "name_cn": "美式常春藤",
+      "name_en": "American Ivy League",
+      "essence": "诞生于1950年代美国常春藤盟校的经典男装体系。以自然肩西装、OCBD牛津衬衫、斜纹裤和便士乐福鞋为核心，追求「刻意的不经意」——知道规则但选择不太当真的姿态。",
+      "source": "原项目 styles/male/american_ivy_league.json",
+      "silhouette": {
+        "preferred": [
+          "合身"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "修身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "藏青",
+          "卡其",
+          "灰",
+          "白",
+          "米白",
+          "勃艮第红",
+          "驼色",
+          "橄榄绿",
+          "粉",
+          "淡蓝"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "中性色打底+一种浓郁色或格纹点缀，从不过于张扬"
+      },
+      "fabric": {
+        "preferred": [
+          "牛津纺",
+          "棉",
+          "羊毛混纺",
+          "粗花呢"
+        ],
+        "acceptable": [
+          "泡泡纱",
+          "亚麻",
+          "灯芯绒",
+          "针织"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "帆布"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "OCBD牛津衬衫是Ivy灵魂——软领无衬，领尖自然卷曲",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "卡其斜纹裤/灰色法兰绒西裤是Ivy下装基底",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "便士乐福鞋/帆船鞋/德比鞋是Ivy鞋履传统",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "Navy Blazer或粗花呢运动夹克是Ivy标志外套",
+          "bonus": 12
+        },
+        {
+          "category": "LS",
+          "desc": "设得兰圆领毛衣/绞花毛衣是Ivy秋冬层次核心",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 5,
+        "遮盖小肚子": 6
+      },
+      "related_styles": [
+        "smart_casual",
+        "korean_light_mature",
+        "british_heritage",
+        "clean_fit"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "retro_90s_hiphop"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "athleisure_sport": {
+      "name_cn": "运动休闲",
+      "name_en": "Athleisure / Sport",
+      "essence": "运动元素融入日常穿搭，不是纯运动服而是有运动感的休闲搭配。涵盖Athleisure、Blokecore（足球元素）、Tenniscore等子风格。功能面料、运动品牌、球队元素均可。",
+      "source": "原项目 styles/male/athleisure_sport.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "紧身"
+        ],
+        "rejected": [
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "中性",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "白",
+          "灰",
+          "红",
+          "藏青",
+          "军绿",
+          "深灰",
+          "荧光橙"
+        ],
+        "max_saturation": "高饱和",
+        "max_colors_per_outfit": 4,
+        "color_logic": "高对比运动色，可以有大面积品牌色"
+      },
+      "fabric": {
+        "preferred": [
+          "速干",
+          "合成",
+          "棉"
+        ],
+        "acceptable": [
+          "针织",
+          "网眼"
+        ],
+        "rejected": [
+          "羊毛混纺",
+          "皮质",
+          "亚麻",
+          "灯芯绒"
+        ]
+      },
+      "layering": {
+        "level": "中低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "速干运动T恤是运动风基础",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "运动外套/球队夹克是Athleisure标志",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "运动鞋/足球鞋是灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "SH",
+          "desc": "速干运动短裤",
+          "bonus": 10
+        },
+        {
+          "category": "PT",
+          "desc": "运动束脚裤",
+          "bonus": 10
+        },
+        {
+          "category": "HAT",
+          "desc": "棒球帽/运动发带",
+          "bonus": 5
+        },
+        {
+          "category": "BAG",
+          "desc": "运动背包",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "解两颗扣——放松不羁"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 3
+      },
+      "related_styles": [
+        "streetwear"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "chinese_heritage",
+        "resort_vacation"
+      ],
+      "tier": "explore",
+      "techniques_inferred": true
+    },
+    "british_heritage": {
+      "name_cn": "英伦遗产",
+      "name_en": "British Heritage",
+      "essence": "从英国贵族乡村生活和户外运动中诞生的功能性服饰传统。以蜡棉夹克(Barbour)、粗花呢运动夹克、切尔西靴为核心，融合皇家狩猎、飞钓传统与苏格兰针织工艺——不是复古，而是穿越百年的活着的穿衣方式。",
+      "source": "原项目 styles/male/british_heritage.json",
+      "silhouette": {
+        "preferred": [
+          "合身"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "修身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "橄榄绿",
+          "深棕",
+          "海军蓝",
+          "深灰",
+          "灰",
+          "勃艮第红",
+          "芥末黄",
+          "卡其"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "大地色+深色系为主，格纹是核心视觉语言——千鸟格/威尔士亲王格/Tartan"
+      },
+      "fabric": {
+        "preferred": [
+          "蜡棉",
+          "粗花呢",
+          "羊毛混纺",
+          "皮质"
+        ],
+        "acceptable": [
+          "棉",
+          "牛津纺",
+          "针织"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "丝质",
+          "牛仔"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "蜡棉夹克/皮夹克/粗花呢运动夹克是英伦遗产外层灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "羊毛格纹裤/打褶斜纹裤是英伦下装标志",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "切尔西靴/布洛克鞋——Goodyear贴边工艺是品质底线",
+          "bonus": 15
+        },
+        {
+          "category": "SHIRT",
+          "desc": "千鸟格/格纹衬衫宽松剪裁，内搭单穿皆可",
+          "bonus": 12
+        },
+        {
+          "category": "LS",
+          "desc": "设得兰渔夫毛衣是英伦秋冬层次核心",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 8,
+        "遮盖小肚子": 6
+      },
+      "related_styles": [
+        "american_ivy_league",
+        "smart_casual",
+        "american_workwear",
+        "japanese_amekaji"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "scene_blokecore",
+        "retro_90s_hiphop"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "chinese_heritage": {
+      "name_cn": "国风质感",
+      "name_en": "Chinese Heritage Luxe",
+      "essence": "基于手串、文玩配件的自然延伸。不是传统汉服，而是以质感配件 + 暗色调 + 自然面料构建低调东方感。适合文化场合、品茶、见长辈。沉香手串、檀木配饰是标志。",
+      "source": "原项目 styles/male/chinese_heritage.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [],
+        "rejected": [
+          "紧身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "檀棕",
+          "米白",
+          "藏青",
+          "深灰",
+          "墨绿",
+          "咖啡",
+          "灰"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "中国传统色系——玄黑、檀棕、月白、鸦青，低饱和沉稳"
+      },
+      "fabric": {
+        "preferred": [
+          "亚麻",
+          "棉",
+          "灯芯绒",
+          "针织",
+          "羊毛混纺"
+        ],
+        "acceptable": [
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "合成"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "暗色/中性色衬衫是国风质感核心",
+          "bonus": 20
+        },
+        {
+          "category": "ACC",
+          "desc": "手串/文玩配饰是国风质感灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "质感长裤（亚麻/灯芯绒/西裤）",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "质感外套（非运动款）",
+          "bonus": 10
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋/德训鞋/皮鞋",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "皮质/帆布邮差包",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "颜色显白": 8,
+        "增加肩宽": 5
+      },
+      "related_styles": [
+        "smart_casual"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "resort_vacation",
+        "streetwear"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "contemporary_gorpcore": {
+      "name_cn": "户外机能风",
+      "name_en": "Gorpcore",
+      "essence": "将功能性户外装备当作都市日常穿着的美学风格。以Gore-Tex冲锋衣、摇粒绒抓绒衫、越野跑鞋为核心，强调「一件户外外套+一套日常内搭」的混搭法则。不是全身登山，而是让机能单品自然融入城市生活。",
+      "source": "原项目 styles/male/contemporary_gorpcore.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "廓形"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "橄榄绿",
+          "卡其",
+          "藏青",
+          "炭灰",
+          "黑",
+          "沙色",
+          "亮橙",
+          "明黄",
+          "电光蓝"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "大地色为主调，一件亮色单品(冲锋衣/摇粒绒)作为视觉焦点，其余保持中性色"
+      },
+      "fabric": {
+        "preferred": [
+          "合成",
+          "速干",
+          "抓绒"
+        ],
+        "acceptable": [
+          "棉",
+          "牛仔",
+          "帆布"
+        ],
+        "rejected": [
+          "羊毛混纺",
+          "丝质",
+          "灯芯绒",
+          "亚麻"
+        ]
+      },
+      "layering": {
+        "level": "中高",
+        "min_layers": 2,
+        "max_layers": 4
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "冲锋衣/摇粒绒外套是Gorpcore灵魂——功能性即风格",
+          "bonus": 20
+        },
+        {
+          "category": "SHOE",
+          "desc": "越野跑鞋/户外徒步鞋是Gorpcore鞋履标志",
+          "bonus": 18
+        },
+        {
+          "category": "PT",
+          "desc": "机能工装裤/尼龙速干裤配合户外廓形",
+          "bonus": 12
+        },
+        {
+          "category": "BAG",
+          "desc": "机能背包/胸包是Gorpcore功能美学的延伸",
+          "bonus": 10
+        },
+        {
+          "category": "TS",
+          "desc": "速干T恤作为内搭底层，保持功能性一致",
+          "bonus": 8
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称——宽松廓形优先",
+          "edge_width": "5-7cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——宽松风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 8,
+        "遮盖小肚子": 7
+      },
+      "related_styles": [
+        "japanese_yama",
+        "athleisure_sport",
+        "streetwear"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "chinese_heritage",
+        "korean_light_mature"
+      ],
+      "tier": "explore",
+      "techniques_inferred": true
+    },
+    "japanese_amekaji": {
+      "name_cn": "日系阿美咔叽",
+      "name_en": "Japanese Amekaji",
+      "essence": "日本对美式休闲服饰极致研究后的逆向输出——比美国人更懂美式风格。以赤耳丹宁、工装夹克、帆布鞋为核心，强调匠人精神、复古质感与「慢时尚」态度。",
+      "source": "原项目 styles/male/japanese_amekaji.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "靛蓝",
+          "橄榄绿",
+          "卡其",
+          "黑",
+          "灰",
+          "白",
+          "米白",
+          "棕"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "美式传统色板——靛蓝为主角，橄榄绿/卡其为配，白色打底"
+      },
+      "fabric": {
+        "preferred": [
+          "牛仔",
+          "棉",
+          "帆布",
+          "皮质"
+        ],
+        "acceptable": [
+          "羊毛混纺",
+          "牛津纺",
+          "针织"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "丝质"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "PT",
+          "desc": "赤耳原牛/水洗牛仔是阿美咔叽灵魂——日本品牌将其做到极致",
+          "bonus": 20
+        },
+        {
+          "category": "JK",
+          "desc": "工装夹克/牛仔外套是阿美咔叽标志外层",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋(Converse/MoonStar)或工装靴是标配",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "纯白/灰重磅T恤是阿美咔叽内搭基底",
+          "bonus": 12
+        },
+        {
+          "category": "SHIRT",
+          "desc": "钱布雷衬衫/格纹工装衬衫丰富层次",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "解两颗扣——放松不羁"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 8,
+        "遮盖小肚子": 4
+      },
+      "related_styles": [
+        "american_workwear",
+        "japanese_city_boy",
+        "british_heritage"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "scandi_minimalism",
+        "korean_light_mature"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "japanese_yama": {
+      "name_cn": "日系山系",
+      "name_en": "Japanese Yama Style",
+      "essence": "日本独有的将户外功能服装融入都市日常的穿搭美学。与Gorpcore共享底层逻辑但表达截然不同——配色更柔和克制、廓形更适合亚洲身型、品牌以日本本土为主。'山系'不仅是穿衣，更是一种'城市与自然之间自由切换'的生活态度。",
+      "source": "原项目 styles/male/japanese_yama.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "合身"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "米白",
+          "沙色",
+          "卡其",
+          "橄榄绿",
+          "藏青",
+          "雾蓝",
+          "灰绿",
+          "炭灰",
+          "苔绿"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "同色系渐变优于对比撞色——沙色→卡其→橄榄绿；永远有一件白色/米白单品作为底色"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "合成",
+          "抓绒",
+          "速干"
+        ],
+        "acceptable": [
+          "帆布",
+          "牛仔"
+        ],
+        "rejected": [
+          "羊毛混纺",
+          "丝质",
+          "灯芯绒",
+          "皮质"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "轻量风壳/摇粒绒外套是山系核心——尼龙材质、哑光质感",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "宽松锥形裤/机能工装裤——腰部抽绳，大腿有空间",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "越野跑鞋/复古跑鞋——Salomon XT-6或New Balance 990系列",
+          "bonus": 12
+        },
+        {
+          "category": "TS",
+          "desc": "白色/米白T恤是山系不变的底层——'底白法则'",
+          "bonus": 12
+        },
+        {
+          "category": "BAG",
+          "desc": "机能胸包/腰包是山系配件灵魂——and wander/F/CE.风格",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 5,
+        "遮盖小肚子": 6
+      },
+      "related_styles": [
+        "contemporary_gorpcore",
+        "japanese_city_boy",
+        "athleisure_sport"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "chinese_heritage",
+        "korean_light_mature",
+        "american_ivy_league"
+      ],
+      "tier": "bold",
+      "techniques_inferred": true
+    },
+    "resort_vacation": {
+      "name_cn": "度假休闲",
+      "name_en": "Resort / Vacation",
+      "essence": "热带印花 + 亚麻材质 + 宽松透气。北京夏季高温（35°C+）时自动推荐。夏威夷衬衫、亚麻短裤、渔夫帽、墨镜是标配。明亮自然色调，给人放松感。",
+      "source": "原项目 styles/male/resort_vacation.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "廓形"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "白",
+          "米白",
+          "棕",
+          "绿",
+          "浅蓝",
+          "卡其",
+          "咖啡",
+          "驼色"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 5,
+        "color_logic": "明亮自然色，植物绿 + 大地棕 + 天空蓝"
+      },
+      "fabric": {
+        "preferred": [
+          "亚麻",
+          "麻",
+          "棉"
+        ],
+        "acceptable": [
+          "帆布",
+          "针织"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "皮质",
+          "羊毛混纺"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 1
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "夏威夷衬衫/热带印花短袖是度假灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "SH",
+          "desc": "亚麻/棉质短裤透气舒适",
+          "bonus": 15
+        },
+        {
+          "category": "HAT",
+          "desc": "渔夫帽遮阳+造型",
+          "bonus": 15
+        },
+        {
+          "category": "SUN",
+          "desc": "墨镜是度假必备",
+          "bonus": 10
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋/凉拖",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "帆布托特包/草编包",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称——宽松廓形优先",
+          "edge_width": "5-7cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——宽松风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "颜色显白": 8
+      },
+      "related_styles": [],
+      "conflicting_styles": [
+        "smart_casual",
+        "chinese_heritage"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "retro_90s_hiphop": {
+      "name_cn": "90s嘻哈风",
+      "name_en": "90s Hip-Hop",
+      "essence": "1990年代说唱黄金时代的街头穿搭体系。核心语言就一个字：大——超大号T恤、宽松牛仔、Timberland工装靴。东西海岸在色调上分化，但共同塑造了现代街头服饰的DNA。不是追求精致，而是宣告「我在这里，我不在乎你的规则」。",
+      "source": "原项目 styles/male/retro_90s_hiphop.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "廓形"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "暖色",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "炭灰",
+          "海军蓝",
+          "森林绿",
+          "卡其",
+          "棕",
+          "白",
+          "红",
+          "蓝",
+          "黄"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "东海岸暗色硬朗(黑/炭灰/海军蓝/森林绿)，西海岸大地轻松(卡其/棕/白)。球衣/棒球夹克作为色彩焦点"
+      },
+      "fabric": {
+        "preferred": [
+          "牛仔",
+          "棉",
+          "合成",
+          "皮质"
+        ],
+        "acceptable": [
+          "帆布",
+          "抓绒"
+        ],
+        "rejected": [
+          "羊毛混纺",
+          "丝质",
+          "亚麻",
+          "灯芯绒"
+        ]
+      },
+      "layering": {
+        "level": "中低",
+        "min_layers": 1,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "SHOE",
+          "desc": "Timberland小麦色6寸靴是东海岸王道，Air Jordan是街头标志",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "宽松/超宽牛仔裤是90s嘻哈下装灵魂",
+          "bonus": 18
+        },
+        {
+          "category": "TS",
+          "desc": "Oversized图案T恤/复古球衣是上装核心",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "棒球夹克/面包羽绒服是东海岸嘻哈标志外层",
+          "bonus": 12
+        },
+        {
+          "category": "HAT",
+          "desc": "Snapback棒球帽/Kangol桶帽是嘻哈配饰灵魂",
+          "bonus": 8
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称——宽松廓形优先",
+          "edge_width": "5-7cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——宽松风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "解两颗扣——放松不羁"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 10,
+        "遮盖小肚子": 10
+      },
+      "related_styles": [
+        "streetwear",
+        "american_workwear",
+        "scene_blokecore",
+        "athleisure_sport"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "clean_fit",
+        "korean_light_mature",
+        "scandi_minimalism",
+        "chinese_heritage"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "scandi_minimalism": {
+      "name_cn": "北欧极简",
+      "name_en": "Scandi Minimalism",
+      "essence": "源自丹麦/瑞典的功能性极简穿搭哲学。以建筑感剪裁、全中性色板、高品质面料为核心，把'实用'穿成最高级的风格。比Clean Fit多一层质感追求——不是故意穿得平凡，而是把平凡做得不平凡。",
+      "source": "原项目 styles/male/scandi_minimalism.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "白",
+          "灰",
+          "米白",
+          "驼色",
+          "炭灰",
+          "沙色",
+          "鼠尾草绿",
+          "雾霾蓝"
+        ],
+        "max_saturation": "低饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "全中性色搭配，用不同材质和灰度制造层次——黑白灰+一到两个自然色"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "羊毛混纺",
+          "针织",
+          "亚麻"
+        ],
+        "acceptable": [
+          "灯芯绒",
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "丝质"
+        ]
+      },
+      "layering": {
+        "level": "低中",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "高品质纯色T恤是北欧极简的底层——质感比设计重要",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "宽腿西裤/直筒裤是北欧极简廓形核心",
+          "bonus": 18
+        },
+        {
+          "category": "SHOE",
+          "desc": "极简纯白/纯黑球鞋，无Logo，质感优先",
+          "bonus": 15
+        },
+        {
+          "category": "LS",
+          "desc": "高领/圆领针织是北欧极简的标志层次",
+          "bonus": 12
+        },
+        {
+          "category": "JK",
+          "desc": "建筑感大衣/简约外套是北欧极简灵魂单品",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 5,
+        "遮盖小肚子": 4
+      },
+      "related_styles": [
+        "clean_fit",
+        "korean_minimal",
+        "smart_casual"
+      ],
+      "conflicting_styles": [
+        "streetwear",
+        "athleisure_sport",
+        "retro_90s_hiphop",
+        "resort_vacation"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "scene_blokecore": {
+      "name_cn": "足球看台风",
+      "name_en": "Blokecore",
+      "essence": "把足球看台文化和复古球衣美学融入日常穿搭。以复古足球球衣+直筒水洗牛仔裤+德训鞋(Adidas Samba/Gazelle)为核心公式，拥抱球迷文化的随性和怀旧——不是去踢球，而是把足球精神穿成街头风格。",
+      "source": "原项目 styles/male/scene_blokecore.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "合身"
+        ],
+        "acceptable": [
+          "廓形"
+        ],
+        "rejected": [
+          "紧身",
+          "修身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "红",
+          "黑",
+          "白",
+          "蓝",
+          "水洗蓝",
+          "灰",
+          "绿"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "球衣作为色彩焦点(红/蓝/条纹)，其余单品中性色衬托，牛仔裤水洗蓝是万能搭"
+      },
+      "fabric": {
+        "preferred": [
+          "合成",
+          "棉",
+          "帆布",
+          "牛仔"
+        ],
+        "acceptable": [
+          "皮质",
+          "速干"
+        ],
+        "rejected": [
+          "羊毛混纺",
+          "丝质",
+          "亚麻",
+          "灯芯绒"
+        ]
+      },
+      "layering": {
+        "level": "低中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "训练外套/球迷夹克是Blokecore外层标志——Adidas复古款为佳",
+          "bonus": 20
+        },
+        {
+          "category": "SHOE",
+          "desc": "Adidas Samba/Gazelle是Blokecore灵魂鞋款",
+          "bonus": 18
+        },
+        {
+          "category": "PT",
+          "desc": "直筒水洗牛仔裤是球衣的最佳搭配基底",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "复古球衣/图案T恤是Blokecore视觉焦点",
+          "bonus": 10
+        },
+        {
+          "category": "SH",
+          "desc": "足球训练短裤强化运动感",
+          "bonus": 8
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "解两颗扣——放松不羁"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 6,
+        "遮盖小肚子": 6
+      },
+      "related_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "retro_90s_hiphop"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "chinese_heritage",
+        "korean_light_mature",
+        "scandi_minimalism"
+      ],
+      "tier": "explore",
+      "techniques_inferred": true
+    },
+    "smart_casual": {
+      "name_cn": "轻熟休闲",
+      "name_en": "Smart Casual",
+      "essence": "比Clean Fit多一分成熟度，适合见客户、约会等半正式场景。用西装外套增加肩宽、衬衫提升精致感、西裤替代牛仔裤。沉稳色系有温度，不刻板。",
+      "source": "原项目 styles/male/smart_casual.json",
+      "silhouette": {
+        "preferred": [
+          "合身"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "中性",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "藏青",
+          "灰",
+          "米白",
+          "棕",
+          "黑",
+          "深绿",
+          "卡其",
+          "暗藏青"
+        ],
+        "max_saturation": "中饱和",
+        "max_colors_per_outfit": 3,
+        "color_logic": "沉稳但有温度，深色主调 + 中性色过渡"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛混纺",
+          "灯芯绒",
+          "牛津纺",
+          "皮质",
+          "棉"
+        ],
+        "acceptable": [
+          "亚麻",
+          "牛仔"
+        ],
+        "rejected": [
+          "速干",
+          "合成"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 3,
+        "max": 5
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "衬衫是轻熟灵魂单品",
+          "bonus": 20
+        },
+        {
+          "category": "JK",
+          "desc": "西装外套/质感夹克提升成熟度",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "暗格纹西裤/直筒长裤",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "皮质德训鞋/乐福鞋",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "皮质邮差包提升质感",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "单解开扣——刚好不紧绷也不随便"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加肩宽": 10,
+        "遮盖小肚子": 8
+      },
+      "related_styles": [
+        "clean_fit",
+        "korean_minimal",
+        "chinese_heritage"
+      ],
+      "conflicting_styles": [
+        "athleisure_sport",
+        "streetwear",
+        "resort_vacation"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "streetwear": {
+      "name_cn": "街头潮流",
+      "name_en": "Streetwear",
+      "essence": "有态度的穿搭，Oversized廓形 + 深色主调 + 跳色点缀。工装夹克、宽松牛仔裤、高帮帆布鞋、棒球帽是核心。适合创意工作/周末出街/音乐节。",
+      "source": "原项目 styles/male/streetwear.json",
+      "silhouette": {
+        "preferred": [
+          "廓形",
+          "宽松"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "黑",
+          "军绿",
+          "灰",
+          "深蓝",
+          "卡其",
+          "藏青"
+        ],
+        "max_saturation": "高饱和",
+        "max_colors_per_outfit": 4,
+        "color_logic": "深色主调 + 1个高亮跳色点缀"
+      },
+      "fabric": {
+        "preferred": [
+          "牛仔",
+          "帆布",
+          "棉"
+        ],
+        "acceptable": [
+          "合成",
+          "皮质",
+          "针织"
+        ],
+        "rejected": [
+          "亚麻",
+          "羊毛混纺",
+          "灯芯绒"
+        ]
+      },
+      "layering": {
+        "level": "中高",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "工装夹克/Oversized外套是街头灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "宽松牛仔裤/工装裤",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "高帮帆布鞋/板鞋/Jordan",
+          "bonus": 15
+        },
+        {
+          "category": "HAT",
+          "desc": "棒球帽/毛线帽是街头标志",
+          "bonus": 10
+        },
+        {
+          "category": "TS",
+          "desc": "Oversized T恤",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "户外马甲包/机能背包",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称——宽松廓形优先",
+          "edge_width": "5-7cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——宽松风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加上半身体量感": 10,
+        "增加肩宽": 5
+      },
+      "related_styles": [
+        "athleisure_sport",
+        "japanese_city_boy"
+      ],
+      "conflicting_styles": [
+        "smart_casual",
+        "korean_minimal",
+        "chinese_heritage"
+      ],
+      "tier": "core",
+      "techniques_inferred": true
+    },
+    "french_effortless": {
+      "name_cn": "法式慵懒",
+      "name_en": "French Effortless",
+      "essence": "看似不经意的精致感——条纹衫+直筒牛仔裤+芭蕾平底鞋，中性色基底+一点红唇破局。核心是「未完成感」：衬衫袖子随意卷起、合身但不紧身。",
+      "source": "原项目 styles/female/WF-01_french_effortless/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "略宽松"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "海军蓝",
+          "白",
+          "红",
+          "卡其",
+          "灰",
+          "米白",
+          "黑",
+          "驼色"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "中性色基底 + 一个红色点缀（唇/鞋/丝巾三选一）"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "真丝",
+          "羊绒",
+          "粗花呢"
+        ],
+        "acceptable": [
+          "针织",
+          "皮质",
+          "羊毛混纺"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "尼龙"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "条纹衫/白衬衫是法式灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "直筒/微喇高腰牛仔裤——法式下半身制服",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "芭蕾平底鞋或粗跟短靴——平底优先",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "风衣或粗花呢夹克",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "皮质简约包——无Logo",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "显腰线": 8,
+        "拉长腿部": 10,
+        "颜色显白": 5,
+        "遮盖臀胯": 3
+      },
+      "related_styles": [
+        "WF-06",
+        "WF-07"
+      ],
+      "conflicting_styles": [
+        "WF-10",
+        "WF-09"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "korean_girlie": {
+      "name_cn": "韩系少女",
+      "name_en": "Korean Girlie",
+      "essence": "首尔街头甜酷风——Oversize卫衣+A字短裙+厚底小白鞋。上宽下窄或上紧下宽，奶油白+粉彩配色，及踝白袜是少女感关键。",
+      "source": "原项目 styles/female/WF-02_korean_girlie/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "A字"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "冷色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "奶油白",
+          "燕麦色",
+          "薰衣草紫",
+          "婴儿蓝",
+          "蜜桃粉",
+          "牛仔蓝",
+          "白",
+          "浅灰"
+        ],
+        "max_saturation": "低饱和",
+        "min_lightness": "中明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "奶油白/燕麦基底 + 1个粉彩点缀（薰衣草紫/婴儿蓝/蜜桃粉）"
+      },
+      "fabric": {
+        "preferred": [
+          "针织",
+          "牛仔",
+          "棉"
+        ],
+        "acceptable": [
+          "西装面料",
+          "丝绒"
+        ],
+        "rejected": [
+          "皮质",
+          "速干"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 1,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "Oversize卫衣——落肩+长度盖臀是韩系少女上装灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "SH",
+          "desc": "A字短裙或高腰百褶裙",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "厚底小白鞋（AF1/Superstar）至少3cm底",
+          "bonus": 15
+        },
+        {
+          "category": "PT",
+          "desc": "高腰直筒牛仔裤——Chuu -5kg Jeans路线",
+          "bonus": 10
+        },
+        {
+          "category": "SOCK",
+          "desc": "中筒白袜配运动鞋是少女感关键",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意前塞或半塞，保持松弛感",
+          "edge_width": "3-5cm"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "解两颗扣——放松不羁"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "拉长腿部": 10,
+        "遮盖臀胯": 8,
+        "颜色显白": 5
+      },
+      "related_styles": [
+        "WF-05",
+        "WF-07"
+      ],
+      "conflicting_styles": [
+        "WF-03",
+        "WF-12"
+      ],
+      "tier": "explore",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "mori_kei": {
+      "name_cn": "日系森系",
+      "name_en": "Mori Kei",
+      "essence": "像是从森林里走出来的女孩——层层叠叠的棉麻、大地色系、宽松廓形。不显瘦、不性感、不追潮流。ゆるふわ（柔软蓬松）是核心。",
+      "source": "原项目 styles/female/WF-03_mori_kei/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "A字",
+          "廓形"
+        ],
+        "acceptable": [],
+        "rejected": [
+          "紧身",
+          "合身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "奶油白",
+          "米色",
+          "驼色",
+          "苔绿",
+          "森林绿",
+          "海军蓝",
+          "铁锈红",
+          "芥末黄",
+          "浆果紫"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 4,
+        "color_logic": "大地色系层叠——不同深浅的驼/绿/米制造层次"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "亚麻",
+          "羊毛",
+          "蕾丝",
+          "钩针"
+        ],
+        "acceptable": [
+          "丝",
+          "皮质"
+        ],
+        "rejected": [
+          "合成",
+          "尼龙",
+          "速干",
+          "牛仔"
+        ]
+      },
+      "layering": {
+        "level": "极高",
+        "min_layers": 3,
+        "max_layers": 5
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "大号针织开衫——森系外层灵魂",
+          "bonus": 20
+        },
+        {
+          "category": "SHIRT",
+          "desc": "蕾丝领衬衫叠穿在连衣裙内",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "棉麻宽松上衣——绝不塞衣角",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "圆头平底鞋/牛津鞋——平底是绝对规则",
+          "bonus": 10
+        },
+        {
+          "category": "PT",
+          "desc": "宽松棉麻长裤——不描绘腿型",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意塞入不追求对称——宽松廓形优先",
+          "edge_width": "5-7cm"
+        },
+        "natural_stack": {
+          "method": "不卷裤脚，自然堆叠——宽松风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "遮盖臀胯": 10,
+        "遮盖小肚子": 10,
+        "修饰手臂": 8,
+        "颜色显白": 5
+      },
+      "related_styles": [
+        "WF-09"
+      ],
+      "conflicting_styles": [
+        "WF-02",
+        "WF-08"
+      ],
+      "tier": "knowledge-only",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "new_chinese": {
+      "name_cn": "新中式",
+      "name_en": "New Chinese",
+      "essence": "中国传统元素现代化——盘扣/立领/马面裙改良，用现代剪裁传承东方美学。一件中式单品即焦点，其余保持现代简约。真丝/宋锦/香云纱是核心面料。",
+      "source": "原项目 styles/female/WF-04_new_chinese/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "宽松"
+        ],
+        "acceptable": [
+          "A字"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "冷色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "月白",
+          "墨黑",
+          "朱砂红",
+          "靛蓝",
+          "玉绿",
+          "檀木棕",
+          "香槟金",
+          "水墨灰"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "中国古典色体系——月白/墨黑/朱砂/靛蓝/玉绿/檀木棕，金银丝点缀"
+      },
+      "fabric": {
+        "preferred": [
+          "真丝",
+          "宋锦",
+          "香云纱",
+          "提花缎"
+        ],
+        "acceptable": [
+          "天丝麻",
+          "重磅棉",
+          "丝绒"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "尼龙",
+          "牛仔"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 5
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "盘扣/立领衬衫——保留立领+盘扣+斜襟，新中式入门单品",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "阔腿丝绒裤/天丝麻阔腿裤——高腰+垂坠感",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "宋锦/真丝外套——中式立领×西式廓形",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "中式改良上衣——一件中式单品即焦点",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "显腰线": 10,
+        "遮盖臀胯": 8,
+        "颜色显白": 8,
+        "拉长腿部": 5
+      },
+      "related_styles": [
+        "WF-06"
+      ],
+      "conflicting_styles": [
+        "WF-10",
+        "WF-08"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "american_casual_f": {
+      "name_cn": "美式休闲",
+      "name_en": "American Casual",
+      "essence": "最民主的女性穿搭——白T+好牛仔裤+帆布鞋。丹宁本位、实用主义、不装不绷。自信就是最好的配饰。",
+      "source": "原项目 styles/female/WF-05_american_casual/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "略宽松"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "牛仔蓝",
+          "白",
+          "灰",
+          "卡其",
+          "黑",
+          "红"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "蓝白主调（牛仔蓝/白/灰/卡其），红色点缀"
+      },
+      "fabric": {
+        "preferred": [
+          "牛仔",
+          "棉",
+          "帆布",
+          "针织"
+        ],
+        "acceptable": [
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "尼龙",
+          "丝绒"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "PT",
+          "desc": "直筒/微喇高腰牛仔裤——至少一件丹宁下装",
+          "bonus": 20
+        },
+        {
+          "category": "TS",
+          "desc": "白T恤——领口挺括、重磅棉、不透视",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "帆布鞋（Converse/Vans）或皮质简约运动鞋",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "牛仔夹克——略短款、可内搭可外穿",
+          "bonus": 10
+        },
+        {
+          "category": "TS",
+          "desc": "条纹长袖T恤——Saint James蓝白条纹",
+          "bonus": 6
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "拉长腿部": 8,
+        "遮盖臀胯": 5,
+        "颜色显白": 3
+      },
+      "related_styles": [
+        "WF-08",
+        "WF-07"
+      ],
+      "conflicting_styles": [
+        "WF-09",
+        "WF-04"
+      ],
+      "tier": "explore",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "minimalist_f": {
+      "name_cn": "极简",
+      "name_en": "Minimalist",
+      "essence": "用最少单品穿出最大气场——建筑感廓形、纯色/单色、面料质感至上、无Logo。去掉所有装饰后，剩下的只有廓形和面料的品质。",
+      "source": "原项目 styles/female/WF-06_minimalist/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "结构感"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "A字"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "白",
+          "黑",
+          "灰",
+          "驼色",
+          "燕麦色",
+          "海军蓝"
+        ],
+        "max_saturation": "低饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 2,
+        "color_logic": "极简五色（黑白灰驼燕麦），全身上下不超过2个颜色"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛",
+          "羊绒",
+          "真丝",
+          "重磅棉",
+          "皮质"
+        ],
+        "acceptable": [
+          "双面呢",
+          "三重醋酸"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "丝绒",
+          "蕾丝"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 5
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "完美白衬衫——挺括有结构、纯棉或丝棉混纺",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "阔腿西装裤——高腰+垂坠感+无装饰",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "结构感西装——不收腰或微收腰，无Logo",
+          "bonus": 15
+        },
+        {
+          "category": "BAG",
+          "desc": "皮质简约包——无Logo（Bottega/The Row/Polène）",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "显腰线": 8,
+        "拉长腿部": 10,
+        "增加肩线": 5
+      },
+      "related_styles": [
+        "WF-01",
+        "WF-11"
+      ],
+      "conflicting_styles": [
+        "WF-09",
+        "WF-10"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "preppy_f": {
+      "name_cn": "学院风",
+      "name_en": "Preppy",
+      "essence": "常春藤校园风——格子百褶裙+菱形格毛衣背心+牛津衬衫+乐福鞋。规矩但不死板，知性又年轻。衬衫领子必须翻到毛衣外面。",
+      "source": "原项目 styles/female/WF-07_preppy/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身"
+        ],
+        "acceptable": [
+          "略宽松",
+          "A字"
+        ],
+        "rejected": [
+          "紧身",
+          "廓形"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "暖色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "海军蓝",
+          "酒红",
+          "卡其",
+          "白",
+          "深绿",
+          "黄"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "学院色（藏青/酒红/卡其/白/深绿）+ 菱格/条纹图案，少量黄点缀"
+      },
+      "fabric": {
+        "preferred": [
+          "牛津纺",
+          "羊毛",
+          "斜纹布",
+          "羊绒",
+          "灯芯绒"
+        ],
+        "acceptable": [
+          "粗花呢",
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "尼龙",
+          "丝绒"
+        ]
+      },
+      "layering": {
+        "level": "中",
+        "min_layers": 2,
+        "max_layers": 3
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "SHIRT",
+          "desc": "牛津衬衫——领子挺括，必须翻到毛衣外面",
+          "bonus": 20
+        },
+        {
+          "category": "TS",
+          "desc": "菱形格毛衣背心——V领、叠穿在衬衫外",
+          "bonus": 15
+        },
+        {
+          "category": "PT",
+          "desc": "格子百褶裙——毛呢或混纺、膝上长度",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "乐福鞋——Penny Loafer或Horsebit",
+          "bonus": 10
+        },
+        {
+          "category": "JK",
+          "desc": "Blazer西装——金扣是学院标志",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "遮盖臀胯": 8,
+        "显腰线": 5,
+        "拉长腿部": 5,
+        "颜色显白": 3
+      },
+      "related_styles": [
+        "WF-12",
+        "WF-01"
+      ],
+      "conflicting_styles": [
+        "WF-09",
+        "WF-10"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "athleisure_f": {
+      "name_cn": "运动休闲",
+      "name_en": "Athleisure",
+      "essence": "瑜伽裤走出瑜伽房——高腰Leggings+运动内衣+oversize帽衫。高性能科技面料，从健身房到咖啡店无缝切换。舒适不妥协。",
+      "source": "原项目 styles/female/WF-08_athleisure/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "紧身",
+          "宽松"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "廓形",
+          "A字"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "灰",
+          "奶油白",
+          "鼠尾草绿",
+          "勃艮第红",
+          "电光蓝",
+          "尘粉"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "黑灰基底 + 1个时尚色点缀（鼠尾草绿/尘粉/电光蓝），同色系套装最省心"
+      },
+      "fabric": {
+        "preferred": [
+          "速干",
+          "氨纶",
+          "聚酯纤维",
+          "尼龙"
+        ],
+        "acceptable": [
+          "棉混纺"
+        ],
+        "rejected": [
+          "羊毛",
+          "丝绒",
+          "皮质",
+          "粗花呢"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "PT",
+          "desc": "高腰瑜伽Leggings——蹲下不透、25''或28''长度",
+          "bonus": 20
+        },
+        {
+          "category": "TS",
+          "desc": "运动内衣/合身T恤——可单穿可内搭",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "Oversize帽衫/Bomber夹克——运动休闲外层公式",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "老爹鞋/跑步鞋——Hoka/Nike/New Balance",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "运动包/腰包——功能性优先",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "拉长腿部": 10,
+        "显腰线": 8,
+        "遮盖小肚子": 5
+      },
+      "related_styles": [
+        "WF-05"
+      ],
+      "conflicting_styles": [
+        "WF-11",
+        "WF-04"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "boho": {
+      "name_cn": "波西米亚",
+      "name_en": "Boho",
+      "essence": "吉普赛流浪者的浪漫——印花长裙+流苏+刺绣+钩针，层层叠叠的纹理和故事。大地色基底+宝石色点缀，像是从摩洛哥市集和伍德斯托克同时归来。",
+      "source": "原项目 styles/female/WF-09_boho/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "宽松",
+          "A字"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "紧身",
+          "结构感"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "奶油白",
+          "焦糖棕",
+          "骆驼棕",
+          "陶土红",
+          "橄榄绿",
+          "矢车菊蓝",
+          "酒红",
+          "紫水晶"
+        ],
+        "max_saturation": "中饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 5,
+        "color_logic": "大地色基底+宝石色点缀。印花混搭允许同色系不同花型"
+      },
+      "fabric": {
+        "preferred": [
+          "棉",
+          "亚麻",
+          "真丝",
+          "钩针",
+          "麂皮",
+          "蕾丝"
+        ],
+        "acceptable": [
+          "丝绒",
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "合成",
+          "尼龙"
+        ]
+      },
+      "layering": {
+        "level": "高",
+        "min_layers": 2,
+        "max_layers": 4
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 3
+      },
+      "key_items": [
+        {
+          "category": "DRESS",
+          "desc": "印花Maxi长裙——及踝长度、民族印花或碎花、真丝或棉",
+          "bonus": 20
+        },
+        {
+          "category": "SHIRT",
+          "desc": "刺绣衬衫/上衣——灯笼袖或泡泡袖",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "流苏麂皮夹克——Boho的标志性外层",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "角斗士凉鞋/麂皮短靴——要有走过路的感觉",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "随意前塞或半塞，保持松弛感",
+          "edge_width": "3-5cm"
+        },
+        "cuff_roll": {
+          "method": "宽边卷边或自然堆叠——宽松廓形标配",
+          "width": "3-5cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "layering_collar": {
+          "method": "内层领口高出外层——三露法则"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "遮盖臀胯": 10,
+        "遮盖小肚子": 8,
+        "修饰手臂": 8,
+        "拉长腿部": 5
+      },
+      "related_styles": [
+        "WF-03"
+      ],
+      "conflicting_styles": [
+        "WF-06",
+        "WF-07"
+      ],
+      "tier": "explore",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "y2k": {
+      "name_cn": "Y2K 千禧复古",
+      "name_en": "Y2K Revival",
+      "essence": "2000年代初流行美学通过TikTok回到2025——低腰牛仔裤、Baby Tee、天鹅绒套装、厚底鞋、蝴蝶发夹。闪亮/金属/镜面是关键词，科技乐观主义的少女时代。",
+      "source": "原项目 styles/female/WF-10_y2k/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "紧身",
+          "低腰"
+        ],
+        "acceptable": [
+          "合身"
+        ],
+        "rejected": [
+          "宽松",
+          "廓形",
+          "A字"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "暖色",
+          "冷色",
+          "中性"
+        ],
+        "allowed_hues": [
+          "热粉",
+          "婴儿蓝",
+          "银色",
+          "金属色",
+          "白",
+          "薰衣草紫",
+          "酸橙绿"
+        ],
+        "max_saturation": "高饱和",
+        "min_lightness": "中明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 4,
+        "color_logic": "粉色/银色/婴儿蓝主调，闪亮/金属/镜面面料。不避高饱和——这是Y2K和所有其他风格最大的颜色分歧"
+      },
+      "fabric": {
+        "preferred": [
+          "天鹅绒",
+          "弹力棉",
+          "牛仔",
+          "尼龙",
+          "金属面料"
+        ],
+        "acceptable": [
+          "网眼",
+          "合成"
+        ],
+        "rejected": [
+          "羊毛",
+          "羊绒",
+          "亚麻",
+          "粗花呢"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 1,
+        "max": 2
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "Baby Tee——极短紧身、长度在肋骨、Logo或图案",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "低腰牛仔裤——胯骨以下、直筒或微喇",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "厚底鞋/厚底靴——至少5cm底，Buffalo London经典款",
+          "bonus": 15
+        },
+        {
+          "category": "TS",
+          "desc": "天鹅绒运动套装——Juicy Couture路线，低腰拉链",
+          "bonus": 10
+        },
+        {
+          "category": "SUN",
+          "desc": "小号墨镜——卵形/矩形/护目镜型，浅色镜片",
+          "bonus": 5
+        }
+      ],
+      "signature_techniques": {
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "roll_to_elbow": {
+          "method": "规整卷至肘下——工装风格标志"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "拉长腿部": 10,
+        "显腰线": 5,
+        "颜色显白": 3
+      },
+      "related_styles": [
+        "WF-08"
+      ],
+      "conflicting_styles": [
+        "WF-06",
+        "WF-04",
+        "WF-01"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "city_girl": {
+      "name_cn": "都市通勤",
+      "name_en": "City Girl",
+      "essence": "为工作穿的，不是为公司穿的——西装外套为锚点，阔腿西装裤+真丝衬衫。面料即专业度，从办公室到酒吧无缝切换。",
+      "source": "原项目 styles/female/WF-11_city_girl/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "结构感"
+        ],
+        "acceptable": [
+          "略宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "廓形",
+          "A字"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "中性",
+          "冷色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "海军蓝",
+          "灰",
+          "驼色",
+          "白",
+          "藕粉",
+          "酒红",
+          "浅蓝"
+        ],
+        "max_saturation": "低饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "高明度",
+        "max_colors_per_outfit": 3,
+        "color_logic": "职场核心色（黑/海军蓝/灰/驼/白）+ 一个柔和彩色（藕粉/浅蓝/酒红选一）"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛",
+          "真丝",
+          "羊绒",
+          "重磅棉"
+        ],
+        "acceptable": [
+          "三重醋酸",
+          "皮质"
+        ],
+        "rejected": [
+          "速干",
+          "尼龙",
+          "丝绒",
+          "牛仔"
+        ]
+      },
+      "layering": {
+        "level": "低",
+        "min_layers": 1,
+        "max_layers": 2
+      },
+      "formality_range": {
+        "min": 3,
+        "max": 5
+      },
+      "key_items": [
+        {
+          "category": "JK",
+          "desc": "结构感西装——通勤的锚点单品。一件好西装=一周的搭配",
+          "bonus": 20
+        },
+        {
+          "category": "PT",
+          "desc": "阔腿西装裤——高腰+垂坠感+长度拖地或及踝",
+          "bonus": 15
+        },
+        {
+          "category": "SHIRT",
+          "desc": "真丝衬衫——垂坠感+光泽=专业+女人味",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "尖头平底鞋/猫跟鞋——1-5cm跟高",
+          "bonus": 10
+        },
+        {
+          "category": "BAG",
+          "desc": "托特包/邮差包——最好能装笔记本",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "显腰线": 10,
+        "拉长腿部": 10,
+        "增加肩线": 5,
+        "遮盖臀胯": 3
+      },
+      "related_styles": [
+        "WF-06",
+        "WF-01"
+      ],
+      "conflicting_styles": [
+        "WF-10",
+        "WF-08"
+      ],
+      "tier": "core",
+      "gender": "female",
+      "techniques_inferred": true
+    },
+    "dark_academia_f": {
+      "name_cn": "暗黑学院",
+      "name_en": "Dark Academia",
+      "essence": "像是从狄更斯小说里走出来——黑棕灰调、高领毛衣+白衬衫叠穿、呢料西装+牛津鞋。哥特浪漫主义与古典学术崇拜的暗黑交融，忧郁学者气质。",
+      "source": "原项目 styles/female/WF-12_dark_academia/fingerprint.json",
+      "silhouette": {
+        "preferred": [
+          "合身",
+          "略宽松"
+        ],
+        "acceptable": [
+          "宽松"
+        ],
+        "rejected": [
+          "紧身",
+          "A字"
+        ]
+      },
+      "color_rules": {
+        "allowed_hue_families": [
+          "冷色",
+          "中性",
+          "暖色"
+        ],
+        "allowed_hues": [
+          "黑",
+          "炭灰",
+          "深棕",
+          "深绿",
+          "酒红",
+          "奶油白",
+          "燕麦色"
+        ],
+        "max_saturation": "低饱和",
+        "min_lightness": "低明度",
+        "max_lightness": "中明度",
+        "max_colors_per_outfit": 2,
+        "color_logic": "暗色调（黑/炭灰/深棕/深绿/酒红）+ 奶油白衬衫领提亮。全暗全灰完全OK——这是风格特征不是错误"
+      },
+      "fabric": {
+        "preferred": [
+          "羊毛",
+          "粗花呢",
+          "重磅棉",
+          "羊绒",
+          "灯芯绒",
+          "皮质"
+        ],
+        "acceptable": [
+          "牛津纺"
+        ],
+        "rejected": [
+          "速干",
+          "尼龙",
+          "丝绒",
+          "钩针"
+        ]
+      },
+      "layering": {
+        "level": "中高",
+        "min_layers": 2,
+        "max_layers": 4
+      },
+      "formality_range": {
+        "min": 2,
+        "max": 4
+      },
+      "key_items": [
+        {
+          "category": "TS",
+          "desc": "黑色高领毛衣——DA的灵魂内搭",
+          "bonus": 20
+        },
+        {
+          "category": "SHIRT",
+          "desc": "白衬衫——领子必须露在高领毛衣外",
+          "bonus": 15
+        },
+        {
+          "category": "JK",
+          "desc": "呢料西装/Blazer——不收腰、粗花呢或羊毛",
+          "bonus": 15
+        },
+        {
+          "category": "SHOE",
+          "desc": "牛津鞋/德比鞋/马丁靴——任何时候都要穿皮质",
+          "bonus": 10
+        },
+        {
+          "category": "PT",
+          "desc": "直筒羊毛裤——高腰、暗色",
+          "bonus": 10
+        }
+      ],
+      "signature_techniques": {
+        "french_tuck": {
+          "method": "规整半塞或全塞，保持利落线条",
+          "edge_width": "3-5cm"
+        },
+        "full_tuck": {
+          "method": "规整全塞，前摆平整——精致风格标志"
+        },
+        "cuff_roll": {
+          "method": "窄边卷边，利落整齐",
+          "width": "2-3cm"
+        },
+        "sleeve_fold": {
+          "method": "基础翻折露出手腕",
+          "width": "2-3cm"
+        },
+        "button_rules": {
+          "method": "根据正式度调整——单解为日常，全扣为正式"
+        },
+        "color_echo": {
+          "method": "选一个已有颜色做小面积呼应——精致不费力"
+        }
+      },
+      "body_modifier_bonus": {
+        "增加肩线": 8,
+        "遮盖臀胯": 8,
+        "遮盖小肚子": 8,
+        "颜色显白": 3
+      },
+      "related_styles": [
+        "WF-07"
+      ],
+      "conflicting_styles": [
+        "WF-02",
+        "WF-09"
+      ],
+      "tier": "explore",
+      "gender": "female",
+      "techniques_inferred": true
+    }
+  },
+  "style_mixing_rules": [
+    {
+      "id": "formal_casual",
+      "name_cn": "正式+休闲",
+      "principle": "80/20法则：主体保持一种调性，用20%的元素反向打破",
+      "example": "西装(80%) + 白球鞋(20%) = 意式sprezzatura的现代版。牛仔裤(80%) + Blazer(20%) = smart casual经典公式。",
+      "when_to_use": [
+        "想让正装不那么严肃",
+        "想让休闲装提升质感"
+      ]
+    },
+    {
+      "id": "sport_elegance",
+      "name_cn": "运动+优雅",
+      "principle": "运动单品（球鞋/卫衣）+ 精致单品（西裤/大衣/衬衫）",
+      "example": "卫衣(50%) + 羊毛大衣(30%) + 九分西裤(20%) = 韩系轻熟运动混搭",
+      "when_to_use": [
+        "想穿球鞋但不显学生气",
+        "想让运动单品融入日常"
+      ]
+    },
+    {
+      "id": "vintage_modern",
+      "name_cn": "复古+现代",
+      "principle": "复古单品（工装/丹宁/做旧）+ 现代剪裁或面料",
+      "example": "重磅原色丹宁(60%) + 现代科技面料T恤(25%) + 复古工装靴(15%) = 美式复古现代版",
+      "when_to_use": [
+        "工装/丹宁爱好者不想穿成「穿越者」"
+      ]
+    },
+    {
+      "id": "hard_soft",
+      "name_cn": "硬朗+柔和",
+      "principle": "硬朗单品（皮衣/工装）+ 柔和面料（羊绒/丝绸）",
+      "example": "皮夹克(50%) + 羊绒高领(30%) + 直筒裤(20%) = 材质对冲高级混搭",
+      "when_to_use": [
+        "想穿皮衣但不显攻击性",
+        "春秋换季最佳混搭时机"
+      ]
+    }
+  ],
+  "fabric_visuals": {
+    "_source": "原项目 config/fabric_visual.json",
+    "亚麻": {
+      "en": "linen",
+      "visual": "matte natural texture with visible slubs and creases, breathable slightly crisp drape"
+    },
+    "真丝": {
+      "en": "silk",
+      "visual": "subtle luminous sheen, fluid liquid-like drape, ultra-smooth surface"
+    },
+    "棉": {
+      "en": "cotton",
+      "visual": "clean matte surface, natural soft structure, breathable medium-weight drape"
+    },
+    "针织": {
+      "en": "knit",
+      "visual": "visible knit stitch texture, body-skimming stretchy drape"
+    },
+    "精纺羊毛": {
+      "en": "fine wool",
+      "visual": "smooth refined surface, crisp structured drape"
+    },
+    "粗纺羊毛": {
+      "en": "wool tweed",
+      "visual": "textured nubby surface, heathered color depth"
+    },
+    "羊绒": {
+      "en": "cashmere",
+      "visual": "ultra-soft fuzzy surface halo, fluid luxurious drape"
+    },
+    "牛仔布": {
+      "en": "denim",
+      "visual": "structured rigid drape, matte indigo wash, diagonal twill weave"
+    },
+    "缎面": {
+      "en": "satin",
+      "visual": "high glossy reflective sheen, fluid slippery drape"
+    },
+    "聚酯纤维": {
+      "en": "polyester",
+      "visual": "smooth even surface, wrinkle-resistant"
+    },
+    "尼龙": {
+      "en": "nylon",
+      "visual": "smooth technical surface with slight sheen"
+    },
+    "皮革": {
+      "en": "leather",
+      "visual": "smooth glossy or matte surface with natural grain texture"
+    },
+    "麂皮": {
+      "en": "suede",
+      "visual": "soft napped velvety surface, matte finish"
+    },
+    "灯芯绒": {
+      "en": "corduroy",
+      "visual": "distinctive vertical ribbed wales, soft textured surface"
+    },
+    "莫代尔": {
+      "en": "modal",
+      "visual": "ultra-smooth silky surface, fluid drape"
+    },
+    "天丝": {
+      "en": "tencel/lyocell",
+      "visual": "smooth surface with subtle natural luster, soft drape"
+    },
+    "牛津纺": {
+      "en": "oxford cloth",
+      "visual": "textured basket-weave surface, durable structured drape, matte finish"
+    },
+    "帆布": {
+      "en": "canvas",
+      "visual": "heavy-duty plain weave, rugged matte texture, stiff structured drape"
+    },
+    "default": {
+      "en": "fabric",
+      "visual": "natural texture, moderate drape, clean finish"
+    }
+  },
+  "occasion_profiles": {
+    "_source": "原项目 config/scene_profiles.json（提取男性高频场景）",
+    "日常": {
+      "required_categories": [
+        "TS",
+        "PT",
+        "SHOE"
+      ],
+      "formality_range": [
+        1,
+        3
+      ],
+      "fabric_preference": [
+        "任意"
+      ],
+      "fit_preference": [
+        "任意"
+      ]
+    },
+    "通勤": {
+      "required_categories": [
+        "TS",
+        "PT",
+        "SHOE"
+      ],
+      "formality_range": [
+        2,
+        3
+      ],
+      "fabric_preference": [
+        "棉",
+        "麻",
+        "羊毛混纺"
+      ],
+      "fit_preference": [
+        "合身",
+        "宽松"
+      ],
+      "category_boost": {
+        "SHIRT": 15,
+        "PT": 15,
+        "JK": 10
+      }
+    },
+    "商务": {
+      "required_categories": [
+        "SHIRT",
+        "PT",
+        "SHOE"
+      ],
+      "formality_range": [
+        3,
+        5
+      ],
+      "fabric_preference": [
+        "羊毛混纺",
+        "棉",
+        "皮质"
+      ],
+      "fit_preference": [
+        "合身",
+        "修身"
+      ],
+      "category_boost": {
+        "SHIRT": 25,
+        "JK": 25,
+        "PT": 20
+      },
+      "avoid": [
+        "SH",
+        "TANK",
+        "TS"
+      ]
+    },
+    "约会": {
+      "required_categories": [
+        "TS",
+        "PT",
+        "SHOE"
+      ],
+      "formality_range": [
+        2,
+        4
+      ],
+      "fabric_preference": [
+        "棉",
+        "亚麻",
+        "皮质",
+        "羊毛混纺"
+      ],
+      "fit_preference": [
+        "合身",
+        "修身"
+      ],
+      "category_boost": {
+        "SHIRT": 20,
+        "JK": 15,
+        "PT": 10
+      },
+      "avoid": [
+        "SH",
+        "TANK"
+      ]
+    },
+    "聚会": {
+      "required_categories": [
+        "TS",
+        "PT",
+        "SHOE"
+      ],
+      "formality_range": [
+        2,
+        3
+      ],
+      "fabric_preference": [
+        "棉",
+        "皮质",
+        "羊毛混纺"
+      ],
+      "fit_preference": [
+        "合身",
+        "宽松"
+      ],
+      "category_boost": {
+        "JK": 15,
+        "SHIRT": 10
+      }
+    },
+    "度假": {
+      "required_categories": [
+        "TS",
+        "SH",
+        "SHOE"
+      ],
+      "formality_range": [
+        1,
+        2
+      ],
+      "fabric_preference": [
+        "棉",
+        "亚麻",
+        "麻"
+      ],
+      "fit_preference": [
+        "宽松"
+      ],
+      "category_boost": {
+        "SH": 20,
+        "TS": 15,
+        "HAT": 15
+      },
+      "avoid": [
+        "JK",
+        "LS"
+      ]
+    }
+  }
+}

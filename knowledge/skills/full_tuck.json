@@ -1,0 +1,175 @@
+{
+  "skill_id": "full_tuck",
+  "name": "全塞",
+  "name_en": "Full Tuck",
+  "stage": "basic",
+  "series": "tuck_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 10,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "把上衣前摆全部塞进裤腰",
+  "description": "将上衣前摆完整塞入下装，然后轻微拉出少许松量（约1cm），制造利落不紧绷的效果。全塞是最基础的塞法——干净、利落、不挑体型。",
+  "steps": [
+    "站直，将上衣前摆全部塞进裤腰",
+    "双手举过头顶，让衣服自然拉出约1cm松量",
+    "对着镜子确认前摆平整无褶皱，两侧自然贴合"
+  ],
+  "why_it_works": "全塞彻底明确了腰线位置——人眼将上下装交界处作为上下半身分界点，腰线每上移1cm腿长视觉增加约2%。全塞比半塞更正式、更利落，适合想要'精神感'的场合。",
+  "expected_effect": "腿长视觉+10-15%，整体利落精神，正式度+20%",
+  "estimated_impact": {
+    "proportion": 15,
+    "neatness": 15,
+    "style_completion": 5
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_visual_waist",
+      "relevance": 10
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_split_rule",
+      "relevance": 8
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 7
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_five_types",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_waist_definition",
+      "relevance": 9
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_formality_spectrum",
+      "relevance": 8
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 7
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 7
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "SHIRT",
+      "POLO",
+      "KNIT"
+    ],
+    "fit": [
+      "合身",
+      "修身",
+      "宽松"
+    ],
+    "scenarios": [
+      "想要利落精神感",
+      "正式/半正式场合",
+      "上衣偏长需要明确腰线",
+      "搭配高腰下装"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 8,
+        "note": "明确腰线是梨形最大优势"
+      },
+      "矩形": {
+        "score": 9,
+        "note": "全塞制造腰线——矩形第一优先级"
+      },
+      "倒三角": {
+        "score": 8,
+        "note": "全塞收紧中段，平衡上下比例"
+      },
+      "苹果": {
+        "score": 4,
+        "note": "全塞可能暴露腰腹问题，优先推荐半塞"
+      },
+      "沙漏": {
+        "score": 8,
+        "note": "全塞强调天然腰线"
+      }
+    }
+  },
+  "body_modifiers": {
+    "long_torso": {
+      "bonus": 2,
+      "note": "长躯干用户全塞上移腰线效果最显著"
+    },
+    "short_legs": {
+      "bonus": 2,
+      "note": "视觉拉长腿部"
+    },
+    "thick_waist": {
+      "bonus": -3,
+      "note": "全塞可能显腰粗，推荐半塞替代"
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "上衣已经塞入",
+      "穿的是外套/夹克（不需要塞）",
+      "极宽松廓形上衣（全塞会鼓包）"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "规整全塞，前摆完全平整，松量控制在1cm",
+      "looseness": "minimal"
+    },
+    "korean_light_mature": {
+      "method": "规整全塞，前摆平整无褶皱——韩系标志塞法",
+      "looseness": "low"
+    },
+    "japanese_minimal": {
+      "method": "全塞后轻拉出1-2cm松量，制造不经意的自然感",
+      "looseness": "medium"
+    },
+    "italian_classic": {
+      "method": "规整全塞后轻微拉出——'我塞了但我不在乎'的sprezzatura",
+      "looseness": "medium-low"
+    }
+  },
+  "common_mistakes": [
+    "塞太紧 → 像制服/军训。正确做法：双手举过头顶拉出1cm松量",
+    "后摆塞入 → 后摆应该保持自然垂落或轻微塞入",
+    "面料太厚导致鼓包 → 厚针织/卫衣不适合全塞，选择半塞或不塞",
+    "苹果型全塞 → 可能暴露腰腹问题。正确做法：苹果优先半塞"
+  ],
+  "tags": [
+    "比例优化",
+    "腰线",
+    "入门",
+    "利落",
+    "正式"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": [
+    "american_retro",
+    "city_boy"
+  ]
+}

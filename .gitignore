@@ -1,4 +1,6 @@
 config/seedream.local.json
+config/models.local.json
 .DS_Store
 __pycache__/
 *.pyc
+data/test_photos/

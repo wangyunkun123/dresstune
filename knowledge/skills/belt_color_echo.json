@@ -1,0 +1,149 @@
+{
+  "skill_id": "belt_color_echo",
+  "name": "腰带颜色呼应",
+  "name_en": "Belt Color Echo",
+  "stage": "basic",
+  "series": "belt_methods",
+  "difficulty": 2,
+  "estimated_time_seconds": 10,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "让腰带颜色与鞋或手表形成呼应",
+  "description": "选择腰带时，让腰带的颜色与鞋、手表表带、或包形成颜色呼应。这是配饰点睛的入门课——腰带从功能性单品变成协调整套穿搭的桥梁。不需要同色，同色系即可。",
+  "steps": [
+    "看一眼今天穿的鞋是什么颜色（棕/黑/白/酒红等）",
+    "选择与鞋同色系或相近色的腰带",
+    "如果鞋与腰带有金属扣，也尽量让金属色一致（金扣配金表，银扣配银表）"
+  ],
+  "why_it_works": "腰带颜色呼应是'色彩呼应'原理在配饰层面的应用。人眼找到腰带-鞋之间的颜色关联，自动连成一条跨越身体的视觉线。这条线把上下半身穿起来——让分开的单品变成一个整体。呼应距离约50cm，效果比近距离呼应（鞋-袜10cm）更明显。",
+  "expected_effect": "整体协调感+30%，精致度+20%",
+  "estimated_impact": {
+    "proportion": 3,
+    "neatness": 5,
+    "style_completion": 15
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "color",
+      "principle_id": "color_echo",
+      "relevance": 10
+    },
+    {
+      "dimension": "color",
+      "principle_id": "color_60_30_10",
+      "relevance": 6
+    },
+    {
+      "dimension": "color",
+      "principle_id": "color_skin_tone",
+      "relevance": 3
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 5
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "PT",
+      "JEANS",
+      "CHINOS",
+      "SLACKS"
+    ],
+    "fit": [
+      "合身",
+      "宽松",
+      "直筒"
+    ],
+    "scenarios": [
+      "穿了需要系腰带的裤子",
+      "鞋与腰带颜色不一致时调整",
+      "想提升整套穿搭的精致度",
+      "商务/半正式场合"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 7,
+        "note": "腰带颜色呼应引导视线横向——注意不要强调胯部"
+      },
+      "矩形": {
+        "score": 9,
+        "note": "腰带制造腰线+颜色呼应=双重优化"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "下身腰带呼应平衡上身"
+      },
+      "苹果": {
+        "score": 6,
+        "note": "注意腰带宽窄——宽腰带可能截断纵向线条"
+      },
+      "沙漏": {
+        "score": 8,
+        "note": "强调天然腰线——沙漏优势"
+      }
+    }
+  },
+  "body_modifiers": {
+    "thick_waist": {
+      "bonus": -1,
+      "note": "宽腰带可能截断纵向线条，选择窄腰带（≤3cm）"
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "不系腰带的裤子（运动裤/松紧腰）",
+      "穿长款上衣完全遮住腰带 → 呼应看不见",
+      "运动场景 → 不需要腰带"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "棕皮带+棕鞋——Clean Fit最经典的呼应公式"
+    },
+    "city_boy": {
+      "method": "帆布腰带+帆布鞋同色——City Boy随意感"
+    },
+    "korean_light_mature": {
+      "method": "窄皮带（≤3cm）+乐福鞋同色——韩系精致细节"
+    },
+    "japanese_minimal": {
+      "method": "做旧皮带+Wallabees同色系——日系时间感的呼应"
+    },
+    "american_retro": {
+      "method": "重磅皮带+工装靴同色——美式硬朗呼应"
+    },
+    "italian_classic": {
+      "method": "麂皮腰带+麂皮乐福鞋同色——sprezzatura的配饰精致"
+    }
+  },
+  "common_mistakes": [
+    "黑鞋+棕腰带 → 最常见的呼应错误。正确做法：鞋与腰带同色系",
+    "金属件颜色不一致 → 金扣腰带+银表+银扣鞋。正确做法：统一金属色",
+    "呼应过度 → 腰带+鞋+表+包+眼镜框全同色=太刻意。正确做法：呼应1-2处"
+  ],
+  "tags": [
+    "配饰",
+    "颜色呼应",
+    "腰带",
+    "精致",
+    "进阶"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": []
+}

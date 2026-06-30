@@ -1,0 +1,115 @@
+{
+  "_comment": "模型定义。密钥和 endpoint 在 models.local.json 中（不提交 Git）",
+
+  "providers": {
+    "deepseek": {
+      "type": "openai_compatible",
+      "base_url": "https://api.deepseek.com/v1",
+      "models": {
+        "deepseek-v4": {
+          "model_id": "deepseek-chat",
+          "modalities": ["text"],
+          "max_tokens": 8192,
+          "temperature": 0.7
+        },
+        "deepseek-v4-vision": {
+          "model_id": "deepseek-chat",
+          "modalities": ["text", "image"],
+          "max_tokens": 8192,
+          "temperature": 0.7
+        }
+      }
+    },
+
+    "volcengine": {
+      "type": "openai_compatible",
+      "base_url": "https://ark.cn-beijing.volces.com/api/plan/v3",
+      "models": {
+        "doubao-2.0-pro": {
+          "model_id": "doubao-seed-2.0-pro",
+          "modalities": ["text", "image"],
+          "max_tokens": 4096,
+          "temperature": 0.7,
+          "note": "豆包旗舰模型，256K上下文，实测支持图片但较慢(36s)"
+        },
+        "doubao-2.0-lite": {
+          "model_id": "doubao-seed-2.0-lite",
+          "modalities": ["text", "image"],
+          "max_tokens": 4096,
+          "temperature": 0.7,
+          "note": "豆包轻量模型，便宜快速(15s)，实测支持图片但穿法细节识别弱"
+        },
+        "deepseek-v4-pro": {
+          "model_id": "deepseek-v4-pro",
+          "modalities": ["text"],
+          "max_tokens": 8192,
+          "temperature": 0.7,
+          "note": "火山上的DeepSeek V4 Pro（备选）"
+        },
+        "minimax-m3": {
+          "model_id": "minimax-m3",
+          "modalities": ["text", "image"],
+          "max_tokens": 8192,
+          "temperature": 0.7,
+          "note": "原生多模态，512K上下文，视觉理解强"
+        },
+        "glm-5.2": {
+          "model_id": "glm-5.2",
+          "modalities": ["text"],
+          "max_tokens": 8192,
+          "temperature": 0.7,
+          "note": "代码最强，1M上下文"
+        },
+        "kimi-k2.7-code": {
+          "model_id": "kimi-k2.7-code",
+          "modalities": ["text", "image"],
+          "max_tokens": 8192,
+          "temperature": 0.7,
+          "note": "Agentic coding，256K上下文"
+        },
+        "seedream-5.0": {
+          "model_id": "doubao-seedream-5.0-lite",
+          "modalities": ["image_generation"],
+          "size": "2048x2048",
+          "max_images": 4,
+          "note": "Agent Plan 唯一可用生图模型"
+        }
+      }
+    }
+  },
+
+  "task_routing": {
+    "_comment": "每个任务类型对应的默认模型和备选模型",
+    "outfit_parsing": {
+      "primary": "volcengine/minimax-m3",
+      "fallback": "volcengine/doubao-2.0-lite",
+      "_note": "DeepSeek V4 Vision 不支持 image_url 格式，已排除。MiniMax-M3 穿法细节最佳（束脚/塞入/卷边识别好），豆包 Lite 快速但细节少。"
+    },
+    "suggestion": {
+      "primary": "deepseek/deepseek-v4",
+      "fallback": "volcengine/doubao-2.0-lite"
+    },
+    "content_generation": {
+      "primary": "deepseek/deepseek-v4",
+      "fallback": "volcengine/doubao-2.0-lite"
+    },
+    "content_review": {
+      "primary": "volcengine/minimax-m3",
+      "fallback": "deepseek/deepseek-v4"
+    },
+    "coding": {
+      "primary": "volcengine/glm-5.2",
+      "fallback": "volcengine/kimi-k2.7-code"
+    },
+    "effect_image": {
+      "primary": "volcengine/seedream-5.0",
+      "fallback": null
+    }
+  },
+
+  "retry": {
+    "max_retries": 2,
+    "base_delay_seconds": 1,
+    "max_delay_seconds": 10
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "skill_id": "cuff_roll",
+  "name": "裤脚卷边",
+  "name_en": "Cuff Roll / Pant Cuff",
+  "difficulty": 1,
+  "estimated_time_seconds": 15,
+  "headline": "把裤脚往上卷一圈",
+  "description": "将长裤裤脚向外翻折1-2圈，露出脚踝最细处。适用于裤长偏长堆在鞋面上的情况。",
+  "steps": [
+    "站直，让裤脚自然垂落到鞋面上",
+    "捏住裤脚边缘，向外翻折一次，宽度约2-3cm（单折）",
+    "如需更短，再翻折一次（双折），确保两圈宽度一致。站直后裤脚应刚好在脚踝最细处或略上方"
+  ],
+  "why_it_works": "露出脚踝是穿搭中最便宜的'显瘦窗口'。堆积的裤脚让腿看起来像两根柱子直通地面，卷起来露出脚踝就给了腿一个终点线，腿长不变但比例更好。",
+  "expected_effect": "腿型更利落，脚踝显瘦，整体多一层细节感。搭配低帮鞋效果最佳",
+  "applicable": {
+    "categories": [
+      "JEANS",
+      "CHINOS",
+      "SLACKS",
+      "JOGGER",
+      "WIDE"
+    ],
+    "fit": [
+      "宽松",
+      "直筒",
+      "合身"
+    ],
+    "scenarios": [
+      "裤长偏长堆在鞋面",
+      "想露出脚踝显瘦",
+      "搭配低帮鞋",
+      "想增加穿搭层次感"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 9,
+        "note": "露出脚踝可以让小腿线条更清晰，平衡胯部量感"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "增加脚踝细节，让下半身更有层次"
+      },
+      "倒三角": {
+        "score": 8,
+        "note": "下身细节增加存在感，平衡宽肩"
+      },
+      "苹果": {
+        "score": 8,
+        "note": "脚踝通常是全身最细处，露出来显瘦效果明显"
+      }
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "SHORTS"
+    ],
+    "scenarios": [
+      "穿的是短裤",
+      "裤长本来就九分/八分（已露脚踝）",
+      "穿高帮靴（裤脚应该塞进靴筒或盖住靴口）",
+      "裤脚已经卷过边"
+    ]
+  },
+  "style_variants": {
+    "Clean Fit": "窄边单折1.5-2cm，整齐利落",
+    "City Boy / 日系": "宽边双折3-4cm，营造随意感",
+    "美式复古": "单折较宽约4-5cm，配帆布鞋",
+    "韩系": "窄边单折，配白袜露出一小截"
+  },
+  "common_mistakes": [
+    "卷得太宽 → 像穿了七分裤。正确做法：单折2-3cm，双折总宽不超过5cm",
+    "两圈宽度不一致 → 歪歪扭扭显邋遢。正确做法：折完检查一圈",
+    "卷太高露出小腿 → 腿被截成两段反而显短。正确做法：刚到脚踝最细处",
+    "面料太厚（如重磅牛仔裤）卷双折 → 裤脚太鼓像轮胎。正确做法：厚面料只卷单折"
+  ],
+  "tags": [
+    "比例优化",
+    "脚踝",
+    "入门",
+    "细节",
+    "日常"
+  ],
+  "stage": "basic",
+  "series": "cuff_methods",
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+  ],
+  "weather_sensitive": true,
+  "weather_min_temp": 12,
+  "weather_note": "温度低于12°C时不推荐露踝技巧",
+  "estimated_impact": {
+    "proportion": 8,
+    "neatness": 12,
+    "style_completion": 5
+  },
+  "body_modifiers": {
+    "short_legs": {
+      "bonus": 2,
+      "note": "露踝+卷边延长腿部视觉终点"
+    },
+    "broad_shoulders": {
+      "bonus": 1,
+      "note": "下身细节平衡上身量感"
+    }
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_exposure_ankle",
+      "relevance": 10
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_split_rule",
+      "relevance": 6
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 7
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    }
+  ],
+  "style_anti_patterns": []
+}

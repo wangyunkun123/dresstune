@@ -1,0 +1,151 @@
+{
+  "skill_id": "layering_collar",
+  "name": "叠穿领口",
+  "name_en": "Layering Collar",
+  "stage": "basic",
+  "series": "collar_methods",
+  "difficulty": 2,
+  "estimated_time_seconds": 10,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "内层领口高出外层——三露法则的第一步",
+  "description": "叠穿时让内层领口高出外层领口——这是层次叠穿「三露法则」（领口露·下摆露·袖口露）中最重要的一步。一件简单的白T恤做内搭，领口高出卫衣/衬衫/外套领口1-2cm，层次感立刻翻倍。",
+  "steps": [
+    "选择内搭（T恤/高领针织），确保领口比外层高",
+    "穿外层（卫衣/衬衫/夹克），确保内层领口露出1-2cm",
+    "对着镜子调整露出量——刚好能看到但不过分突出"
+  ],
+  "why_it_works": "叠穿领口的本质是制造视觉深度。单层=平面，双层=立体。内层领口露出就像画框的衬线——它告诉眼睛'这里有两层'，大脑自动解读为'这个人花了心思'。1-2cm的露出量是最佳平衡：太少看不见，太多像穿了两件领子各搞各的。",
+  "expected_effect": "层次感+100%，'会穿'信号+50%，操作10秒",
+  "estimated_impact": {
+    "proportion": 3,
+    "neatness": 5,
+    "style_completion": 18
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_v_neck_extension",
+      "relevance": 6
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_visual_weight_shift",
+      "relevance": 6
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 9
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "KNIT",
+      "SHIRT"
+    ],
+    "fit": [
+      "合身",
+      "宽松"
+    ],
+    "scenarios": [
+      "穿了两层以上上衣",
+      "内搭白T恤或高领针织",
+      "卫衣/衬衫/夹克里面想加层次",
+      "春秋过渡季——叠穿最佳时机"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 9,
+        "note": "叠穿领口引导视线上移——梨形第一优先级"
+      },
+      "矩形": {
+        "score": 8,
+        "note": "领口层次打破直筒轮廓的单调"
+      },
+      "倒三角": {
+        "score": 6,
+        "note": "领口层次可能进一步增加上半身体积"
+      },
+      "苹果": {
+        "score": 7,
+        "note": "V领+叠穿纵向延伸拉长躯干"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "narrow_shoulders": {
+      "bonus": 2,
+      "note": "叠穿领口增加肩颈区域视觉量感"
+    },
+    "long_torso": {
+      "bonus": 1,
+      "note": "层次上移视觉重心"
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "只穿了一件上衣 → 无法叠穿",
+      "极炎热天气（35°C+）→ 两层太热",
+      "外层领口太高（高领外套）→ 内层无法更高"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "白T恤领口+衬衫领口——两圈白色衬线，Clean Fit层次标配"
+    },
+    "city_boy": {
+      "method": "核心穿法：白T高领口+卫衣圆领+外套翻领——三重领口City Boy层次极限"
+    },
+    "korean_light_mature": {
+      "method": "高领针织+大衣翻领——韩系经典叠穿公式"
+    },
+    "japanese_minimal": {
+      "method": "亚麻衬衫内搭白T——日系最简单的层次。领口微露1cm刚好"
+    },
+    "american_retro": {
+      "method": "白T+钱布雷衬衫+工装外套——三重领口美式工装标配"
+    },
+    "italian_classic": {
+      "method": "高领羊绒+西装驳领——意式优雅的层次典范"
+    }
+  },
+  "common_mistakes": [
+    "露出太多 → 内层领口高出3cm以上像穿了两件不搭的衣服。正确做法：1-2cm",
+    "颜色冲突 → 内搭荧光色领口配深色外层。正确做法：内搭领口用白/灰/米白最安全",
+    "忘记其他两露 → 领口露了但袖口没露下摆没露——层次不完整。正确做法：三露法则一起用"
+  ],
+  "tags": [
+    "层次",
+    "叠穿",
+    "领口",
+    "三露法则",
+    "进阶"
+  ],
+  "seasons": [
+    "spring",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": []
+}

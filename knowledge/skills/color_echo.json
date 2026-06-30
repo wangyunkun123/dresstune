@@ -1,0 +1,165 @@
+{
+  "skill_id": "color_echo",
+  "name": "颜色呼应",
+  "name_en": "Color Echo",
+  "difficulty": 2,
+  "estimated_time_seconds": 10,
+  "headline": "让身上有一处颜色互相呼应",
+  "description": "让穿搭中的两个元素（鞋&上装、包&鞋、袜子&帽子等）在颜色上互相呼应，制造'用心了'的整体感。",
+  "steps": [
+    "扫一眼全身，找到身上已有的颜色（主色、辅色、点缀色）",
+    "选一个已有颜色，找一个可以呼应的位置（鞋→帽、包→袜、上衣图案色→鞋等）",
+    "调整或添加呼应元素（比如换一双与上衣颜色同色系的袜子、戴与鞋同色的帽子）"
+  ],
+  "why_it_works": "人眼天生喜欢找颜色关联。当两个位置出现同一颜色，大脑自动把它们连成一条视觉线，整体立刻多了'搭配过'的高级感。这是最不需要花钱的技巧——用身上已有的颜色就行。",
+  "expected_effect": "穿搭整体感+50%，视觉流动感增强，看起来'很会穿'",
+  "applicable": {
+    "categories": [
+      "*"
+    ],
+    "fit": [
+      "*"
+    ],
+    "scenarios": [
+      "穿搭已经基本协调",
+      "想在好的基础上更出彩",
+      "整体颜色偏素/单调",
+      "有一个明显的点缀色可以呼应"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 7,
+        "note": "上半身的呼应色可以引导视线向上"
+      },
+      "矩形": {
+        "score": 8,
+        "note": "颜色呼应制造视觉动线，打破矩形平淡感"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "下身的呼应色可以平衡视线分布"
+      },
+      "苹果": {
+        "score": 7,
+        "note": "纵向颜色呼应延伸视觉"
+      }
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "整体颜色已经非常花哨（3种以上高饱和色）→ 先做减法",
+      "所有单品都是同一个颜色（全黑/全白）→ 已经呼应了"
+    ]
+  },
+  "patterns": [
+    {
+      "name": "鞋帽呼应",
+      "desc": "鞋子颜色 = 帽子颜色",
+      "effort": "低"
+    },
+    {
+      "name": "鞋包呼应",
+      "desc": "鞋子颜色 = 包包颜色",
+      "effort": "低"
+    },
+    {
+      "name": "袜衣呼应",
+      "desc": "袜子颜色与上装某色相同",
+      "effort": "低"
+    },
+    {
+      "name": "图案色呼应",
+      "desc": "鞋/袜颜色呼应上装图案中的小面积颜色",
+      "effort": "中"
+    },
+    {
+      "name": "金属件呼应",
+      "desc": "腰带扣颜色 = 手表/项链颜色（金色/银色）",
+      "effort": "中"
+    },
+    {
+      "name": "鞋裤同色",
+      "desc": "鞋与裤子同色系，腿长直接延伸到脚",
+      "effort": "低"
+    }
+  ],
+  "common_mistakes": [
+    "呼应过度 → 全身3处以上同色像穿制服。正确做法：呼应1-2处就够了",
+    "呼应色太突兀 → 全身素色突然一个荧光呼应。正确做法：呼应色应与整体色调协调",
+    "为呼应而买新东西 → 违背不买原则。正确做法：用好已有的配饰/袜子/帽子"
+  ],
+  "tags": [
+    "颜色",
+    "进阶",
+    "配饰",
+    "整体感",
+    "不花钱"
+  ],
+  "stage": "basic",
+  "series": "color_methods",
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "estimated_impact": {
+    "proportion": 3,
+    "neatness": 5,
+    "style_completion": 15
+  },
+  "body_modifiers": {
+    "narrow_shoulders": {
+      "bonus": 1,
+      "note": "上半身呼应色引导视线向上"
+    },
+    "short_legs": {
+      "bonus": 1,
+      "note": "鞋裤同色延伸腿长"
+    }
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "color",
+      "principle_id": "color_echo",
+      "relevance": 10
+    },
+    {
+      "dimension": "color",
+      "principle_id": "color_60_30_10",
+      "relevance": 8
+    },
+    {
+      "dimension": "color",
+      "principle_id": "color_skin_tone",
+      "relevance": 5
+    },
+    {
+      "dimension": "color",
+      "principle_id": "color_max_three_hues",
+      "relevance": 5
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 6
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 7
+    }
+  ],
+  "style_anti_patterns": []
+}

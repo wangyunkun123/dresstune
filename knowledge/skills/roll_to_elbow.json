@@ -1,0 +1,156 @@
+{
+  "skill_id": "roll_to_elbow",
+  "name": "卷袖至肘",
+  "name_en": "Roll to Elbow",
+  "stage": "basic",
+  "series": "sleeve_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 15,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "规整地将袖口翻卷至肘下",
+  "description": "将长袖规整地向外翻折，逐层卷至肘下位置。这是工装风格和美式复古的标志——比推肘更整齐，比基础翻折更大胆。露出大半前臂，传递'我准备干活了'的信号。",
+  "steps": [
+    "解开袖口所有扣子",
+    "将袖口向外翻折一次，宽度约袖口本身的长度（5-8cm）",
+    "继续向上翻折第二次、第三次，直到袖口停在肘下2-3cm处——确保每层折边平整"
+  ],
+  "why_it_works": "卷袖至肘是最有'动作感'的袖口处理。它露出前臂最大的面积——既实用（夏天散热、工作时利落），又有造型（手臂线条充分展示）。在工装文化中，卷袖至肘是'开始干活'的仪式。在穿搭中，它传递的信息是'我有力量，但我不炫耀'。",
+  "expected_effect": "手臂露出+50%，利落感+100%，工装/复古风格完成度+30%",
+  "estimated_impact": {
+    "proportion": 3,
+    "neatness": 10,
+    "style_completion": 15
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_exposure_wrist",
+      "relevance": 10
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 6
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_visual_weight_shift",
+      "relevance": 5
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 5
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "LS",
+      "SHIRT",
+      "POLO",
+      "KNIT"
+    ],
+    "fit": [
+      "合身",
+      "宽松",
+      "修身"
+    ],
+    "scenarios": [
+      "工装/美式复古风格",
+      "夏天穿长袖衬衫散热",
+      "需要露前臂显利落",
+      "搭配短裤制造上下平衡"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 8,
+        "note": "上半身细节加强视觉重心上移"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "手臂露出制造视觉变化"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "露前臂分散肩部量感"
+      },
+      "苹果": {
+        "score": 9,
+        "note": "露前臂突出四肢纤细——苹果优势"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "broad_shoulders": {
+      "bonus": 1,
+      "note": "露前臂+卷袖分散上半身注意"
+    },
+    "narrow_shoulders": {
+      "bonus": -1,
+      "note": "卷袖至肘减少上半身体积，窄肩用户慎用"
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "TS"
+    ],
+    "scenarios": [
+      "短袖 → 无法卷",
+      "袖长不够 → 卷不到肘下",
+      "极正式场合 → 卷袖至肘太随意"
+    ]
+  },
+  "style_variants": {
+    "city_boy": {
+      "method": "宽松衬衫卷至肘——配宽腿裤和帆布鞋的City Boy夏季公式"
+    },
+    "japanese_minimal": {
+      "method": "亚麻衬衫随意卷至肘——日系夏天的经典画面"
+    },
+    "american_retro": {
+      "method": "核心穿法：工装衬衫/钱布雷衬衫规整卷至肘——美式复古标配"
+    },
+    "italian_classic": {
+      "method": "衬衫卷至肘+乐福鞋无袜——sprezzatura的夏季宣言"
+    }
+  },
+  "common_mistakes": [
+    "卷太高 → 卷到肘以上变成短袖。正确做法：停在肘下2-3cm",
+    "折边不整齐 → 工装风格需要规整卷边而非随意堆叠。正确做法：每层捋平",
+    "袖子太薄 → 卷不住一直滑。正确做法：牛津纺/厚棉衬衫最适合"
+  ],
+  "tags": [
+    "袖口",
+    "工装",
+    "美式复古",
+    "夏季",
+    "利落"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+  ],
+  "style_anti_patterns": [
+    "clean_fit",
+    "korean_light_mature"
+  ]
+}

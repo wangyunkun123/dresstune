@@ -1,0 +1,58 @@
+{
+  "IMG_8648.JPG × 梨形+Clean Fit": {
+    "success": true,
+    "session_id": "be71e235-c545-490b-a9db-478a47219b9f",
+    "total_latency_ms": 56341.65024757385,
+    "error": null,
+    "outfit_description": "米白底深绿条纹短袖T恤搭配浅蓝宽松束脚牛仔裤与灰色低帮帆布鞋，背双肩包，整体偏休闲韩系学生风。",
+    "overall_style": "韩系休闲 / 学院风（Clean Fit 偏街头）",
+    "checklist_no_count": 1,
+    "top_skill": "全塞 (full_tuck)",
+    "top_score": null,
+    "why": "上衣没塞，腰线被遮住了，会让腿看起来比实际短一截。你本身腿身比偏短，又是梨形身材，明确腰线最能发挥你的优势——视觉上立刻拉长腿，比例更好看。",
+    "effect_images": 1,
+    "effect_error": null
+  },
+  "IMG_8648.JPG × 矩形+City Boy": {
+    "success": true,
+    "session_id": "7aebef19-2401-4e47-9353-aa772b580232",
+    "total_latency_ms": 50919.389963150024,
+    "error": null,
+    "outfit_description": "白底墨绿横条纹短袖T恤搭配浅蓝宽松牛仔裤与白色低帮帆布鞋，肩背双肩包，整体清新休闲。",
+    "overall_style": "日系 / 休闲校园",
+    "checklist_no_count": 2,
+    "top_skill": "腰带颜色呼应 (belt_color_echo)",
+    "top_score": null,
+    "why": "你的白色帆布鞋很清爽，如果腰带也选白色或浅色系，人眼会自动把腰带和鞋子连成一条视觉线，上下身就串起来了。你的矩形身材正好需要一条腰带强调腰线，一举两得。",
+    "effect_images": 1,
+    "effect_error": null
+  },
+  "IMG_2944.jpg × 梨形+Clean Fit": {
+    "success": true,
+    "session_id": "ade4b465-771e-4988-95a7-3cf59b5cbdf9",
+    "total_latency_ms": 50894.08802986145,
+    "error": null,
+    "outfit_description": "红色运动球衣搭配黑色运动短裤与白色运动鞋，配白色棒球帽，整体运动休闲风格。",
+    "overall_style": "运动休闲 / Athleisure",
+    "checklist_no_count": 0,
+    "top_skill": "全塞 (full_tuck)",
+    "top_score": null,
+    "why": "你穿的是宽松篮球球衣，全塞进短裤里能立刻划出腰线——这对梨形身材特别友好，能让视觉焦点上移，腿看起来更长。而且红黑白的配色本来就经典，全塞会让整体更利落，运动感反而更强。",
+    "effect_images": 1,
+    "effect_error": null
+  },
+  "IMG_2944.jpg × 矩形+City Boy": {
+    "success": true,
+    "session_id": "05644d3f-4275-47f9-8ba1-3a7f3c5e26e1",
+    "total_latency_ms": 52326.15804672241,
+    "error": null,
+    "outfit_description": "红色运动球衣搭配黑色运动短裤与白色运动鞋，戴米白色棒球帽，整体运动休闲风。",
+    "overall_style": "运动休闲 / Sporty Casual",
+    "checklist_no_count": 0,
+    "top_skill": "随意前塞 (casual_front_tuck)",
+    "top_score": null,
+    "why": "你这一身运动感很统一，红黑配色也很精神。如果想更显腿长一点，可以用一个超简单的小技巧——只塞前面一小块。正面看腰线出来了，腿长视觉增加，但侧面和后面还是自然垂着，保持住你想要的松弛感。",
+    "effect_images": 1,
+    "effect_error": null
+  }
+}

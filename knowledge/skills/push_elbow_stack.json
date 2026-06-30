@@ -1,0 +1,146 @@
+{
+  "skill_id": "push_elbow_stack",
+  "name": "推肘堆叠",
+  "name_en": "Push-Elbow Stack",
+  "stage": "basic",
+  "series": "sleeve_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 5,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "长袖推到肘部，制造随意层次",
+  "description": "将长袖从手腕向上推到肘部位置，让袖管在肘部自然堆叠形成褶皱。这比规整翻折更随意——适合卫衣、针织衫、宽松衬衫。推肘不追求整齐，追求'我根本没花心思'的松弛感。",
+  "steps": [
+    "解开袖口扣子（如果有的话）",
+    "从手腕处向上推袖子，推到肘部位置",
+    "让袖管在肘部自然堆叠——不用整理，越随意越好"
+  ],
+  "why_it_works": "推肘堆叠在两个层面起作用：①露出手腕和前臂——手腕是手臂最细处，露出来立刻显精神；②肘部堆叠制造层次——从肩到肘到腕，三段轮廓比一段轮廓丰富得多。比规整翻折多一分'懒得弄'的松弛感。",
+  "expected_effect": "手臂线条+30%层次感，随意感+50%，操作5秒零门槛",
+  "estimated_impact": {
+    "proportion": 5,
+    "neatness": -3,
+    "style_completion": 12
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_exposure_wrist",
+      "relevance": 10
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 6
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "LS",
+      "KNIT",
+      "HOODIE",
+      "SWEAT"
+    ],
+    "fit": [
+      "宽松",
+      "合身",
+      "廓形"
+    ],
+    "scenarios": [
+      "卫衣/针织衫袖子偏长",
+      "想要随意慵懒感",
+      "不想花时间卷袖子",
+      "室内温度刚好露前臂"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 7,
+        "note": "上半身细节转移视觉重心向上"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "手臂层次打破直线感"
+      },
+      "倒三角": {
+        "score": 6,
+        "note": "推肘露出前臂分散肩部量感"
+      },
+      "苹果": {
+        "score": 8,
+        "note": "露前臂突出四肢纤细优势"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "narrow_shoulders": {
+      "bonus": 1,
+      "note": "肘部堆叠增加手臂视觉量感"
+    },
+    "broad_shoulders": {
+      "bonus": 1,
+      "note": "露前臂分散上半身注意"
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "TS"
+    ],
+    "scenarios": [
+      "短袖 → 无法推肘",
+      "正式场合 → 推肘太随意，应该规整卷袖",
+      "袖子太紧 → 推上去会滑下来"
+    ]
+  },
+  "style_variants": {
+    "city_boy": {
+      "method": "经典穿法：宽松卫衣推肘堆叠+内搭长袖露袖口——层次感拉满"
+    },
+    "korean_light_mature": {
+      "method": "针织衫推肘——温柔慵懒的韩系周末感"
+    },
+    "japanese_minimal": {
+      "method": "随意推肘不追求对称——侘寂的不经意感"
+    },
+    "american_retro": {
+      "method": "工装/重磅卫衣推肘——露出前臂干活方便"
+    }
+  },
+  "common_mistakes": [
+    "推太高 → 推到肘以上像穿短袖。正确做法：堆叠在肘部位置",
+    "刻意整理褶皱 → 破坏了随意感。正确做法：推上去就别管了",
+    "紧身袖推肘 → 会滑下来。正确做法：紧身袖选择规整卷袖"
+  ],
+  "tags": [
+    "袖口",
+    "松弛感",
+    "入门",
+    "层次",
+    "City Boy"
+  ],
+  "seasons": [
+    "spring",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": [
+    "clean_fit",
+    "italian_classic"
+  ]
+}

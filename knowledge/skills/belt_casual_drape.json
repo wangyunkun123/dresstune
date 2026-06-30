@@ -1,0 +1,137 @@
+{
+  "skill_id": "belt_casual_drape",
+  "name": "随意垂坠",
+  "name_en": "Casual Belt Drape",
+  "stage": "basic",
+  "series": "belt_methods",
+  "difficulty": 2,
+  "estimated_time_seconds": 5,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "腰带不穿过所有扣环，让末端随意垂下",
+  "description": "穿好裤子后，将腰带穿过扣环时故意不穿过第一个（或最后一个）扣环，让腰带的末端不规整地自然垂落。这是意式 Sprezzatura 的终极签名——看起来像忘了穿好，实际上是精心计算的。",
+  "steps": [
+    "正常穿过腰带扣环，但故意跳过最靠近门襟的那个扣环",
+    "扣好腰带后，让末端不塞进第一个裤环，自然垂下",
+    "确保垂下长度约5-10cm——太长拖沓，太短看不出来"
+  ],
+  "why_it_works": "随意垂坠是'精心计算的漫不经心'（sprezzatura）在配饰层面最直接的体现。它打破了腰带的工整感，制造的'错误'反而让整套穿搭更有人味——不完美比完美更令人放松，也更令人印象深刻。",
+  "expected_effect": "sprezzatura 风格完成度+50%，随意感+30%，'这个人很会穿'信号+20%",
+  "estimated_impact": {
+    "proportion": 0,
+    "neatness": -5,
+    "style_completion": 20
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 10
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_80_20_mixing",
+      "relevance": 8
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 5
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "PT",
+      "JEANS",
+      "CHINOS",
+      "SLACKS"
+    ],
+    "fit": [
+      "合身",
+      "宽松"
+    ],
+    "scenarios": [
+      "意式/sprezzatura风格",
+      "想要打破过于整齐的穿搭",
+      "休闲场合——正式场合不推荐",
+      "皮质或编织腰带（帆布/尼龙腰带不推荐用来垂坠）"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 6,
+        "note": "注意垂坠不要引导视线到胯部"
+      },
+      "矩形": {
+        "score": 8,
+        "note": "腰带垂坠制造视觉趣味点打破直线"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "下身细节增加关注度"
+      },
+      "苹果": {
+        "score": 6,
+        "note": "注意垂坠位置不要停在腹部"
+      },
+      "沙漏": {
+        "score": 8,
+        "note": "配饰细节彰显品味"
+      }
+    }
+  },
+  "body_modifiers": {},
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "正式场合 → 腰带必须工整穿过所有扣环",
+      "需要活动（运动/跳舞）→ 垂坠腰带会甩",
+      "帆布/尼龙腰带 → 太软垂坠没质感，只有皮质/编织合适",
+      "裤子太松全靠腰带的 → 不穿全扣环裤子可能会掉"
+    ]
+  },
+  "style_variants": {
+    "city_boy": {
+      "method": "帆布编织腰带随意穿过——City Boy的随意感但通常不刻意垂坠"
+    },
+    "japanese_minimal": {
+      "method": "做旧皮带随意穿过不追求对称——侘寂的自然感"
+    },
+    "american_retro": {
+      "method": "重磅皮带工整穿过所有扣环——美式工装不搞这一套"
+    },
+    "italian_classic": {
+      "method": "终极用法：皮质腰带跳过第一扣环，末端5-8cm自然垂下——sprezzatura签名"
+    }
+  },
+  "common_mistakes": [
+    "垂太长 → 超过15cm像忘了系腰带。正确做法：5-10cm",
+    "正式场合用 → 面试/婚礼/商务会议非常不得体。正确做法：只在休闲场合用",
+    "软腰带垂坠 → 帆布/尼龙腰带垂下来软塌塌没型。正确做法：只有挺括的皮质/编织腰带才适合"
+  ],
+  "tags": [
+    "腰带",
+    "sprezzatura",
+    "意式",
+    "配饰",
+    "进阶"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": [
+    "american_retro",
+    "clean_fit",
+    "korean_light_mature"
+  ]
+}

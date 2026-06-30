@@ -1,0 +1,151 @@
+{
+  "skill_id": "stand_collar",
+  "name": "立领造型",
+  "name_en": "Stand Collar",
+  "stage": "basic",
+  "series": "collar_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 3,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "把外套领子立起来",
+  "description": "将外套（夹克/风衣/牛仔外套）的领子立起。这是一个只需3秒就能改变整套穿搭气质的微调——从'普通穿着'到'有造型意识'的差距，往往就一个领子。",
+  "steps": [
+    "确认外套领子有足够的挺括度（软塌领子立不住）",
+    "将领子向上翻起，确保两侧对称",
+    "对着镜子确认领子高度——刚好到下巴下方最修饰脸型"
+  ],
+  "why_it_works": "立领在两个层面起作用：①纵向延伸——从肩到领到头的线条被拉长，显高显精神；②面部框构——立领像一个框架把脸'框'起来，让视觉自然聚焦到脸部。这就是为什么电影里角色耍帅时总要立领——不是装，是有视觉原理的。",
+  "expected_effect": "脸部视觉聚焦+20%，纵向延伸显高显精神，造型感+50%",
+  "estimated_impact": {
+    "proportion": 5,
+    "neatness": 5,
+    "style_completion": 15
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 8
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_v_neck_extension",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 6
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "JK",
+      "COAT",
+      "BLAZER"
+    ],
+    "fit": [
+      "合身",
+      "宽松"
+    ],
+    "scenarios": [
+      "有领外套（牛仔夹克/风衣/哈灵顿夹克/工装外套）",
+      "想要增加造型感",
+      "脸部偏圆想用立领修饰",
+      "有风天气——立领实用+造型两全"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 7,
+        "note": "立领引导视线上移至脸部"
+      },
+      "矩形": {
+        "score": 8,
+        "note": "纵向延伸打破水平直线感"
+      },
+      "倒三角": {
+        "score": 6,
+        "note": "立领可能进一步强化上半身量感"
+      },
+      "苹果": {
+        "score": 8,
+        "note": "V领+立领纵向延伸拉长躯干"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "narrow_shoulders": {
+      "bonus": 1,
+      "note": "立领增加肩颈区域视觉量感"
+    },
+    "thick_waist": {
+      "bonus": 1,
+      "note": "立领引导视线向上，远离中段"
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "KNIT",
+      "HOODIE"
+    ],
+    "scenarios": [
+      "无领外套（圆领夹克/无领开衫）→ 无领可立",
+      "软塌领子（薄棉/丝绸）→ 立不起来",
+      "极正式场合 → 立领太随意"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "牛仔夹克微立领——刚好到下颌，干净利落"
+    },
+    "city_boy": {
+      "method": "哈灵顿夹克/风衣立领——内搭连帽衫领口露出，层次翻倍"
+    },
+    "korean_light_mature": {
+      "method": "大衣立领——韩剧男主标配。起风时立领+双手插袋"
+    },
+    "japanese_minimal": {
+      "method": "宽松外套立领——日系'间'的空气感，领子与脖子之间留空隙"
+    },
+    "american_retro": {
+      "method": "牛仔夹克/工装外套立领——美式不羁。立领配工装靴"
+    },
+    "italian_classic": {
+      "method": "风衣/Balmacaan大衣立领——优雅的防风姿态"
+    }
+  },
+  "common_mistakes": [
+    "立太高 → 领子戳到下巴/耳朵。正确做法：刚好到下颌下方",
+    "软塌领子硬立 → 立不起来一直倒。正确做法：只有挺括领子才立",
+    "不对称 → 一边高一边低显邋遢。正确做法：对着镜子确认对称",
+    "全身立领+墨镜+低头 → 像躲狗仔。正确做法：自然站立正常表情"
+  ],
+  "tags": [
+    "领口",
+    "造型",
+    "入门",
+    "纵向延伸",
+    "3秒技巧"
+  ],
+  "seasons": [
+    "spring",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": []
+}

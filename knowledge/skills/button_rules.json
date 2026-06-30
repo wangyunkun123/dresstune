@@ -1,0 +1,170 @@
+{
+  "skill_id": "button_rules",
+  "name": "扣子法则",
+  "name_en": "Button Rules",
+  "difficulty": 1,
+  "estimated_time_seconds": 5,
+  "headline": "调整一下扣子的开合",
+  "description": "根据场合和层数，调整衬衫/Polo衫领口和门襟的扣子开合状态。最基础也最容易被忽略的技巧。",
+  "steps": [
+    "默念口诀：'单穿解两颗，内搭解一颗，正式全扣上'",
+    "对着镜子确认当前场景属于哪种（单穿/内搭/正式）",
+    "调整领口扣子到对应数量，整理领型确保对称"
+  ],
+  "why_it_works": "领口扣子的开合直接决定整套穿搭的'正式度'和'松弛感'。全扣太板，解太多太浪。恰到好处的开合让脖子线条延伸，脸型也更修长。",
+  "expected_effect": "正式度精准匹配场合，领口V型延伸拉长脸型，整体协调自然",
+  "applicable": {
+    "categories": [
+      "SHIRT",
+      "POLO"
+    ],
+    "fit": [
+      "宽松",
+      "合身",
+      "修身"
+    ],
+    "scenarios": [
+      "穿有扣上衣",
+      "领口状态不确定",
+      "想调整正式度"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 6,
+        "note": "V领延伸有助于上半身视觉"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "领口V型制造上半身层次"
+      },
+      "倒三角": {
+        "score": 8,
+        "note": "解扣可以柔化宽肩和胸围量感"
+      },
+      "苹果": {
+        "score": 7,
+        "note": "V领延伸拉长躯干线条"
+      }
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "KNIT",
+      "HOODIE",
+      "SWEAT",
+      "JK",
+      "COAT",
+      "BLAZER"
+    ],
+    "scenarios": [
+      "穿的是无扣上衣（T恤/卫衣/针织衫）",
+      "衬衫最上面那颗扣子本身就是设计款（如暗扣/中式立领）"
+    ]
+  },
+  "rules": {
+    "单穿衬衫": {
+      "unbutton": 2,
+      "note": "解开最上面两颗，制造V领效果"
+    },
+    "内搭衬衫（外套里）": {
+      "unbutton": 1,
+      "note": "解开最上面一颗，比全扣多一分随意"
+    },
+    "Polo衫单穿": {
+      "unbutton": 2,
+      "note": "Polo领口设计就是为解开两颗穿的"
+    },
+    "Polo衫全扣": {
+      "note": "极少见，除非运动场合防领口翻飞"
+    },
+    "正式场合（打领带）": {
+      "unbutton": 0,
+      "note": "全扣，最正式"
+    },
+    "半正式（不系领带）": {
+      "unbutton": 1,
+      "note": "解一颗，不显紧绷"
+    }
+  },
+  "common_mistakes": [
+    "衬衫解三颗以上 → 太暴露轻浮。正确做法：最多两颗",
+    "内搭全扣 → 像第一天上班。正确做法：内搭解一颗更自然",
+    "Polo衫全扣到顶 → 非常老气。正确做法：Polo设计就是为解开穿",
+    "解扣后领子歪斜 → 邋遢。正确做法：整理领型对称"
+  ],
+  "tags": [
+    "领口",
+    "正式度",
+    "入门",
+    "细节",
+    "衬衫"
+  ],
+  "stage": "basic",
+  "series": "collar_methods",
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "estimated_impact": {
+    "proportion": 5,
+    "neatness": 8,
+    "style_completion": 10
+  },
+  "body_modifiers": {
+    "broad_shoulders": {
+      "bonus": 2,
+      "note": "V领延伸柔化肩部量感"
+    },
+    "thick_waist": {
+      "bonus": 1,
+      "note": "V领纵向拉长躯干线条"
+    }
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 7
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_v_neck_extension",
+      "relevance": 10
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_visual_weight_shift",
+      "relevance": 8
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 6
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_formality_spectrum",
+      "relevance": 10
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 9
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 7
+    }
+  ],
+  "style_anti_patterns": []
+}

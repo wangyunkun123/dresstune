@@ -1,0 +1,152 @@
+{
+  "skill_id": "natural_stack",
+  "name": "随意堆叠",
+  "name_en": "Natural Stack",
+  "stage": "basic",
+  "series": "cuff_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 0,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "不卷裤脚，让裤脚自然堆叠在鞋面上",
+  "description": "不卷不折不处理——让裤脚自然垂落在鞋面上形成堆叠。这是City Boy和日系侘寂的标志性穿法。没有动作就是动作本身。",
+  "steps": [
+    "确保裤长偏长（站立时裤脚刚好碰到鞋面或稍长1-2cm）",
+    "不卷不折不处理——让裤脚自然垂落",
+    "搭配有分量的鞋（帆布鞋/德训鞋/厚底鞋）让堆叠有支撑"
+  ],
+  "why_it_works": "自然堆叠的核心美学是'不完美感'。在日系侘寂哲学中，刻意的不处理比精致的处理更高级——它传达的信息是'我对自己的穿搭足够自信，不需要每个细节都精确'。宽松裤+自然堆叠=从大腿到鞋面的连续廓形线，比卷边露踝更连贯。",
+  "expected_effect": "廓形连贯不截断，日系松弛感+100%，零操作零负担",
+  "estimated_impact": {
+    "proportion": 0,
+    "neatness": -5,
+    "style_completion": 20
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 8
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_five_types",
+      "relevance": 7
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 10
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_80_20_mixing",
+      "relevance": 5
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "JEANS",
+      "CHINOS",
+      "SLACKS",
+      "JOGGER",
+      "WIDE"
+    ],
+    "fit": [
+      "宽松",
+      "直筒",
+      "廓形"
+    ],
+    "scenarios": [
+      "City Boy/日系风格穿搭",
+      "裤长偏长不需要卷",
+      "想营造随意慵懒感",
+      "搭配厚底鞋/帆布鞋"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 6,
+        "note": "自然堆叠保持裤脚量感，平衡胯部"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "廓形连贯加强直线感"
+      },
+      "倒三角": {
+        "score": 8,
+        "note": "下身堆叠增加量感平衡上身"
+      },
+      "苹果": {
+        "score": 6,
+        "note": "注意不要显得臃肿"
+      },
+      "沙漏": {
+        "score": 6,
+        "note": "自然即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "broad_shoulders": {
+      "bonus": 2,
+      "note": "下身堆叠增加量感平衡宽肩"
+    },
+    "short_legs": {
+      "bonus": -2,
+      "note": "堆叠可能进一步压短腿长，推荐卷边露踝"
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "SHORTS"
+    ],
+    "scenarios": [
+      "正式/商务场合 → 裤脚堆叠显邋遢",
+      "裤长过短（九分裤）→ 无法堆叠",
+      "紧身/修身裤 → 堆叠不了",
+      "需要露脚踝显瘦时"
+    ]
+  },
+  "style_variants": {
+    "city_boy": {
+      "method": "经典穿法：宽松裤+自然堆叠+厚底帆布鞋——City Boy标志性轮廓"
+    },
+    "japanese_minimal": {
+      "method": "核心穿法：宽腿裤自然堆叠在帆布鞋/Wallabees上——侘寂之美"
+    },
+    "american_retro": {
+      "method": "原牛未改裤长→自然堆叠→工装靴支撑——养牛玩家标配"
+    }
+  },
+  "common_mistakes": [
+    "裤长过长堆成'一坨' → 像没改裤长。正确做法：堆叠量1-2cm最多3cm",
+    "配薄底鞋 → 堆叠无支撑。正确做法：搭配有分量的鞋（帆布鞋/厚底板鞋）",
+    "正式场合堆叠 → 显邋遢。正确做法：正式场合裤脚刚好触及鞋面，零堆叠"
+  ],
+  "tags": [
+    "裤脚",
+    "City Boy",
+    "日系",
+    "松弛感",
+    "零操作"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": [
+    "clean_fit",
+    "italian_classic",
+    "korean_light_mature"
+  ]
+}

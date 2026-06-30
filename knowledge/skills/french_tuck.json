@@ -1,0 +1,166 @@
+{
+  "skill_id": "french_tuck",
+  "name": "法式半塞",
+  "name_en": "French Tuck",
+  "difficulty": 1,
+  "estimated_time_seconds": 10,
+  "headline": "把T恤前摆塞进裤腰一点点",
+  "description": "将上衣前摆中间部分塞入裤腰约3-5cm，后摆自然垂放。只塞前不塞后，制造不经意的松弛感。",
+  "steps": [
+    "站直，找到上衣前摆正中间位置（肚脐正前方）",
+    "只塞正前方约5cm宽的一小块，轻拉出约1cm松量",
+    "塞进裤腰约3-5cm，让前摆微微鼓出一点弧度，后摆自然垂下不塞"
+  ],
+  "why_it_works": "明确腰线位置，打破'上宽下宽'的H型轮廓。视觉上把上半身截短，腿就从腰线开始算，立刻拉长比例。",
+  "expected_effect": "腿长视觉+10-15%，整体更利落，有'随便穿但很好看'的松弛感",
+  "applicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "SHIRT",
+      "POLO",
+      "KNIT",
+      "HOODIE",
+      "SWEAT"
+    ],
+    "fit": [
+      "宽松",
+      "合身"
+    ],
+    "scenarios": [
+      "上衣下摆未塞",
+      "上下身比例失衡",
+      "腰线模糊",
+      "上衣偏长盖过胯部"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 10,
+        "note": "强推。明确腰线后腿身比立刻改善，是梨形体型最有效的单步调整"
+      },
+      "矩形": {
+        "score": 9,
+        "note": "制造腰线是矩形体型穿搭的第一要务，半塞打破直筒轮廓"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "下身量感较轻时，半塞可以让上下过渡更自然"
+      },
+      "苹果": {
+        "score": 6,
+        "note": "注意塞的松量，不要太紧以免突出腹部"
+      },
+      "沙漏": {
+        "score": 8,
+        "note": "法式半塞强调天然腰线——沙漏优势"
+      }
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "上衣已经全塞或半塞",
+      "穿的是连衣裙或连体衣",
+      "上衣是露脐款/短款（本身就在腰线以上）",
+      "下装是高腰款且上衣本来就短"
+    ]
+  },
+  "style_variants": {
+    "Clean Fit": "精确对正中间，两侧对称垂下，干净利落",
+    "City Boy / 日系": "随意塞入不追求对称，营造'随手一塞'的不经意感",
+    "韩系": "只塞一侧前摆，不对称效果更有设计感"
+  },
+  "common_mistakes": [
+    "塞太多布料 → 腰部鼓包显臃肿。正确做法：只塞拇指+食指捏住的一小撮",
+    "塞太多或太紧 → 像制服。正确做法：只塞前摆一小块，拉出少许松量保持松弛感",
+    "后摆也塞进去了 → 变成全塞，失去了半塞的松弛感",
+    "塞的位置太偏左右 → 视觉重心歪掉。正确做法：对准肚脐正前方"
+  ],
+  "tags": [
+    "比例优化",
+    "腰线",
+    "入门",
+    "日常",
+    "最常用"
+  ],
+  "stage": "basic",
+  "series": "tuck_methods",
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "estimated_impact": {
+    "proportion": 15,
+    "neatness": 10,
+    "style_completion": 5
+  },
+  "body_modifiers": {
+    "long_torso": {
+      "bonus": 2,
+      "note": "长躯干用户拉高腰线效果显著"
+    },
+    "short_legs": {
+      "bonus": 2,
+      "note": "视觉拉长腿部"
+    },
+    "thick_waist": {
+      "bonus": 1,
+      "note": "半塞优于全塞，不会在腹部制造紧绷感"
+    }
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_visual_waist",
+      "relevance": 10
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_split_rule",
+      "relevance": 8
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 7
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_five_types",
+      "relevance": 5
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_waist_definition",
+      "relevance": 9
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 7
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 6
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_formality_spectrum",
+      "relevance": 5
+    }
+  ],
+  "style_anti_patterns": []
+}

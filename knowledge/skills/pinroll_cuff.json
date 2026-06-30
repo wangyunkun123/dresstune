@@ -1,0 +1,168 @@
+{
+  "skill_id": "pinroll_cuff",
+  "name": "双折细卷",
+  "name_en": "Pinroll Cuff",
+  "stage": "basic",
+  "series": "cuff_methods",
+  "difficulty": 2,
+  "estimated_time_seconds": 30,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "向内折细卷裤脚，锥形裤专用",
+  "description": "Pinroll 是日系阿美咔叽和 City Boy 的标志性裤脚处理。不同于普通向外翻折——Pinroll 是将裤脚内侧布料向内折叠后再向上卷，形成细窄的锥形裤脚效果。专为锥形裤和直筒裤设计。",
+  "steps": [
+    "将裤脚内侧的布料向脚踝方向折叠，折进约2-3cm（这是Pinroll与普通卷边的关键区别）",
+    "捏住折叠后的裤脚，向上翻折一次，宽度约2-3cm",
+    "根据需要再翻折一次，确保折边平整——完成后的裤脚应该紧贴脚踝呈锥形"
+  ],
+  "why_it_works": "普通卷边=裤脚宽度不变。Pinroll=裤脚宽度收窄→锥形效果→从大腿到脚踝形成一条干净的递减线。这就是为什么日系玩家如此痴迷Pinroll——它让便宜的直筒牛仔裤也能穿出锥形裤的轮廓。",
+  "expected_effect": "裤脚收窄制造锥形廓形，脚踝最细处清晰可见，日系精致感+50%",
+  "estimated_impact": {
+    "proportion": 8,
+    "neatness": 10,
+    "style_completion": 15
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_exposure_ankle",
+      "relevance": 10
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_split_rule",
+      "relevance": 6
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_five_types",
+      "relevance": 8
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 7
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 9
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "JEANS",
+      "CHINOS",
+      "SLACKS"
+    ],
+    "fit": [
+      "直筒",
+      "锥形",
+      "合身"
+    ],
+    "scenarios": [
+      "想要锥形裤效果但没有锥形裤",
+      "日系/City Boy风格穿搭",
+      "搭配帆布鞋/德训鞋时露鞋面",
+      "裤脚偏宽需要收窄"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 9,
+        "note": "锥形裤脚平衡胯部量感"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "锥形效果制造腿部线条变化"
+      },
+      "倒三角": {
+        "score": 8,
+        "note": "下身细节增加视觉丰富度"
+      },
+      "苹果": {
+        "score": 8,
+        "note": "紧贴脚踝突出四肢纤细优势"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可"
+      }
+    }
+  },
+  "body_modifiers": {
+    "short_legs": {
+      "bonus": 2,
+      "note": "Pinroll露踝延长腿部视觉"
+    },
+    "broad_shoulders": {
+      "bonus": 2,
+      "note": "下身细节平衡上身量感"
+    }
+  },
+  "inapplicable": {
+    "categories": [
+      "SHORTS"
+    ],
+    "scenarios": [
+      "裤脚已经非常窄（紧身裤）→ Pinroll无法再收窄",
+      "阔腿裤/宽腿裤 → 普通卷边或自然堆叠更合适",
+      "穿靴子 → 裤脚应该盖过靴筒"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "窄边精确Pinroll 2cm——整齐干净",
+      "width": "2cm"
+    },
+    "city_boy": {
+      "method": "标准Pinroll 3cm，配中筒白袜——City Boy标配",
+      "width": "3cm"
+    },
+    "korean_light_mature": {
+      "method": "细窄Pinroll 2cm配白袜——精致韩系感",
+      "width": "2cm"
+    },
+    "japanese_minimal": {
+      "method": "自然Pinroll不追求完全对称——侘寂的不完美",
+      "width": "2-3cm"
+    },
+    "american_retro": {
+      "method": "宽边单折——美式风格不追求Pinroll精细度",
+      "width": "4-5cm"
+    },
+    "italian_classic": {
+      "method": "精致细窄Pinroll，配乐福鞋露脚踝——sprezzatura细节",
+      "width": "2cm"
+    }
+  },
+  "common_mistakes": [
+    "忘记向内折叠 → 变成普通卷边。正确做法：第一步必须先向内折进2-3cm",
+    "折边不平整 → 显得邋遢。正确做法：用手指捋平折边确保整齐",
+    "卷得太宽 → Pinroll的精髓是细窄。正确做法：2-3cm，不超过3cm",
+    "阔腿裤做Pinroll → 内侧折不完。正确做法：阔腿裤用普通卷边"
+  ],
+  "tags": [
+    "裤脚",
+    "日系",
+    "锥形",
+    "细节",
+    "进阶"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn"
+  ],
+  "weather_sensitive": true,
+  "weather_min_temp": 12,
+  "weather_note": "温度低于12°C时不推荐露踝技巧",
+  "style_anti_patterns": []
+}

@@ -1,0 +1,171 @@
+{
+  "skill_id": "casual_front_tuck",
+  "name": "随意前塞",
+  "name_en": "Casual Front Tuck",
+  "stage": "basic",
+  "series": "tuck_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 5,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "只塞正前方一小块，其余自然堆叠",
+  "description": "只将上衣正前方最中间的一小块（约3-5cm宽）塞进裤腰，其余部分自然垂落堆叠。这是最不用力的塞法——松弛感拉满，几乎不挑体型。",
+  "steps": [
+    "找到上衣正前方的中间点（肚脐正上方）",
+    "只捏住中间约3-5cm宽的一小块布料，塞进裤腰",
+    "整理两侧和后摆，让它们自然垂落堆叠——不要刻意平整"
+  ],
+  "why_it_works": "随意前塞在'明确腰线'和'保持松弛感'之间取了最优平衡。正面看腰线明确（腿长+10%），侧面和背面看自然垂落（不紧绷）。比全塞更不挑体型——苹果型也能轻松驾驭。",
+  "expected_effect": "腰线微调+5-10%腿长视觉，松弛感+30%，几乎零负担",
+  "estimated_impact": {
+    "proportion": 10,
+    "neatness": 5,
+    "style_completion": 10
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_visual_waist",
+      "relevance": 8
+    },
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_split_rule",
+      "relevance": 5
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_waist_definition",
+      "relevance": 7
+    },
+    {
+      "dimension": "body_modification",
+      "principle_id": "body_accentuate",
+      "relevance": 6
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "TS",
+      "LS",
+      "SHIRT",
+      "POLO",
+      "KNIT",
+      "HOODIE",
+      "SWEAT"
+    ],
+    "fit": [
+      "宽松",
+      "合身",
+      "廓形"
+    ],
+    "scenarios": [
+      "想要一点腰线但不想要正式感",
+      "上衣偏长但不想全塞",
+      "苹果型/粗腰用户的首选塞法",
+      "宽松上衣想微调比例"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 7,
+        "note": "前塞明确腰线，侧面自然垂落不紧绷"
+      },
+      "矩形": {
+        "score": 8,
+        "note": "制造腰线的同时保持松弛感"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "前塞收紧中段，下身自然宽松"
+      },
+      "苹果": {
+        "score": 9,
+        "note": "苹果型最佳塞法——微调腰线不暴露腹部"
+      },
+      "沙漏": {
+        "score": 7,
+        "note": "微调即可，沙漏不需要大改比例"
+      }
+    }
+  },
+  "body_modifiers": {
+    "thick_waist": {
+      "bonus": 3,
+      "note": "随意前塞是粗腰用户的最佳选择——微调腰线不制造紧绷"
+    },
+    "long_torso": {
+      "bonus": 1,
+      "note": "轻微上移腰线"
+    },
+    "short_legs": {
+      "bonus": 1,
+      "note": "正面微调腿长视觉"
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "上衣已经塞入",
+      "穿的是外套/夹克",
+      "极正式场合（全塞更合适）"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "精确正中对准，只塞中间3cm——干净但有松弛",
+      "edge_width": "3cm"
+    },
+    "city_boy": {
+      "method": "随意塞入不追求对称，5-7cm宽——故意的随意感",
+      "edge_width": "5-7cm"
+    },
+    "korean_light_mature": {
+      "method": "不对称只塞一侧前摆——韩系标志性不对称塞法",
+      "edge_width": "3-5cm"
+    },
+    "japanese_minimal": {
+      "method": "只塞正前方2-4cm一小块，其余自然——侘寂的不完美感",
+      "edge_width": "2-4cm"
+    },
+    "american_retro": {
+      "method": "工装风：前塞宽松随意，配重磅T恤和工装裤",
+      "edge_width": "5-7cm"
+    },
+    "italian_classic": {
+      "method": "前塞后轻微拉出0.5cm——sprezzatura的随意感",
+      "edge_width": "3-5cm"
+    }
+  },
+  "common_mistakes": [
+    "塞太多 → 变成了全塞。正确做法：只塞3-5cm宽一小块",
+    "塞太少 → 看不出来塞了。正确做法：确保正面能看到腰线",
+    "刻意整理两侧 → 破坏了随意感。正确做法：塞完就不用管两侧了"
+  ],
+  "tags": [
+    "比例优化",
+    "腰线",
+    "入门",
+    "松弛感",
+    "苹果友好"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": []
+}

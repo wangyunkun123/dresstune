@@ -1,0 +1,150 @@
+{
+  "skill_id": "no_belt_styling",
+  "name": "无腰带造型",
+  "name_en": "No-Belt Styling",
+  "stage": "basic",
+  "series": "belt_methods",
+  "difficulty": 1,
+  "estimated_time_seconds": 0,
+  "target_gender": [
+    "male",
+    "female"
+  ],
+  "prerequisites": [],
+  "headline": "故意不系腰带，让裤腰自然呈现",
+  "description": "当裤子合身不需要腰带时，故意不系——让裤腰、裤耳、门襟自然呈现。这是极简主义的腰带态度：最好的腰带是看不出来你系了腰带。高腰裤、定制西裤、松紧腰裤都天然适合无腰带。",
+  "steps": [
+    "确认裤子合身——不需要腰带来固定（这是前提）",
+    "不系腰带，让裤腰自然贴合",
+    "如果裤子有裤耳（皮带环），确保裤耳不显突兀——如果裤耳太多太明显，可能需要系腰带遮一下"
+  ],
+  "why_it_works": "无腰带造型=对裤子合身度的最高信任。它传递的信号是'我的裤子就是为我量身定做的，不需要额外的东西来固定'。在视觉上，无腰带让腰线更干净——没有横向截断，纵向线条从肩到脚一气呵成。",
+  "expected_effect": "腰线简洁+30%，极简感+50%，纵向连续性+20%",
+  "estimated_impact": {
+    "proportion": 5,
+    "neatness": 10,
+    "style_completion": 10
+  },
+  "aesthetics_dimensions": [
+    {
+      "dimension": "proportion",
+      "principle_id": "prop_vertical_extension",
+      "relevance": 7
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_five_types",
+      "relevance": 5
+    },
+    {
+      "dimension": "silhouette",
+      "principle_id": "sil_tight_loose_balance",
+      "relevance": 5
+    },
+    {
+      "dimension": "style",
+      "principle_id": "sty_technique_variation",
+      "relevance": 8
+    },
+    {
+      "dimension": "occasion",
+      "principle_id": "occ_same_clothes_different_wear",
+      "relevance": 5
+    }
+  ],
+  "applicable": {
+    "categories": [
+      "PT",
+      "JEANS",
+      "CHINOS",
+      "SLACKS",
+      "JOGGER"
+    ],
+    "fit": [
+      "合身",
+      "定制",
+      "修身"
+    ],
+    "scenarios": [
+      "裤子合身不需要腰带",
+      "高腰裤自带腰线",
+      "极简/Clean Fit风格",
+      "想要纵向延伸最大化"
+    ],
+    "body_types": {
+      "梨形": {
+        "score": 6,
+        "note": "注意无腰带不要弱化腰线"
+      },
+      "矩形": {
+        "score": 7,
+        "note": "高腰裤无腰带=天然的腰线制造"
+      },
+      "倒三角": {
+        "score": 7,
+        "note": "简洁下身平衡上身"
+      },
+      "苹果": {
+        "score": 6,
+        "note": "确保裤腰在自然腰线位置"
+      },
+      "沙漏": {
+        "score": 8,
+        "note": "无腰带让天然腰线更突出"
+      }
+    }
+  },
+  "body_modifiers": {
+    "long_torso": {
+      "bonus": 1,
+      "note": "无腰带+高腰裤=纵向最大化"
+    }
+  },
+  "inapplicable": {
+    "categories": [],
+    "scenarios": [
+      "裤子偏松 → 不系腰带裤子会掉",
+      "裤耳太多太明显（5个以上）→ 不系腰带像忘了",
+      "正式西装 → 西装裤通常需要腰带来完成正式感",
+      "需要腰带做颜色呼应 → 此时腰带是配饰而非功能"
+    ]
+  },
+  "style_variants": {
+    "clean_fit": {
+      "method": "核心穿法：定制西裤/合身牛仔裤无腰带——Clean Fit极简的终极表达"
+    },
+    "city_boy": {
+      "method": "宽松裤+松紧腰——City Boy本来就常无腰带"
+    },
+    "korean_light_mature": {
+      "method": "高腰九分西裤无腰带——韩系极简精致感"
+    },
+    "japanese_minimal": {
+      "method": "宽腿裤无腰带自然垂坠——侘寂的核心穿法"
+    },
+    "italian_classic": {
+      "method": "高腰打褶西裤+侧调节袢——意式定制的无腰带优雅。腰带被侧调节袢取代"
+    }
+  },
+  "common_mistakes": [
+    "裤子松还不系腰带 → 裤子往下掉。正确做法：不系腰带的前提是裤子真的合身",
+    "裤耳明显还不系 → 看起来像今天忘了系腰带。正确做法：要么系腰带，要么穿无裤耳的裤子",
+    "正式场合西装不系腰带 → 非常不得体。正确做法：正式西装必须系腰带（或穿侧调节袢西裤）"
+  ],
+  "tags": [
+    "腰带",
+    "极简",
+    "Clean Fit",
+    "零操作",
+    "纵向延伸"
+  ],
+  "seasons": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ],
+  "style_anti_patterns": [
+    "american_retro"
+  ]
+}
